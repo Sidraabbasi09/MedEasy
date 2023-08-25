@@ -1,0 +1,253 @@
+/* ======Roboto-Font-Family====== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* ======Inter-Font-Family====== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+   --Persian-Green:#0BABA9;
+   --btn-clr:#10bbb9;
+   --Tron-Blue:#8AFBF9;
+   --Bg-clr:#F0F0F0;
+   --white-text:#FFF;
+   --black-text:#000;
+   --Green-button:#28E225;
+   --Red-button:#EF372B;
+   --Grey-text:rgba(0, 0, 0, 0.70);
+   --radio-button-1:rgba(217, 217, 217, 0.44);
+   --radio-button-2:#067877;
+   --rating:#FFF503;
+   --box-shadow:rgba(0, 0, 0, 0.25);
+   --Roboto-FF:'Roboto';
+   --Poppins-FF:'Poppins';
+   --Inter-FF:'Inter';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* =============Login-Page-Css===============*/
+.bg_Clr{
+    background-color: var(--Bg-clr);
+}
+.Bg_Clr_S{
+    background-color: var(--Bg-clr);
+}
+.Bg_Img_S{
+    background-image:url(../images/Loginpage/Background\ Img.png) ;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.Loginby_Ggl,.Loginby_fb{
+    width: 15%;
+}
+/* =====================Button===============*/
+.Main_btn,.Feedback_btn{
+    background-color:var(--Persian-Green) !important;
+    color:var(--white-text)!important;
+    border-radius: 12px !important;
+    font-family: var(--Roboto-FF);
+    font-size: 20px;
+    font-weight: 700 !important;
+    padding: 15px !important;
+    text-transform: capitalize;
+    transition: transform 1s ease, box-shadow 1s ease, background-color 0.6s ease;
+}
+.Heading__txt{
+ font-weight: 700;
+ font-family: var(--Roboto-FF);
+}
+.pt-6{
+    margin-top: 6rem;
+}
+.paragraph_txt{
+    font-weight: 600;
+    font-size: 18px;
+}
+.Heading__txt{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: var(--Roboto-FF);
+   }
+.Login_Form_S{
+    width: 75%;
+    margin-top: 20px !important;
+}
+.Admin_radio_btn,.Member_radio_btn{
+border-radius: 12px !important;
+font-family: var(--Roboto-FF);
+font-size: 16px;
+}
+.FP__Link{
+    text-decoration: none;
+}
+.FP__txt{
+color: var(--Persian-Green);
+font-family:var(--Poppins-FF);
+font-size: 15px;
+font-weight: 500;
+text-transform: capitalize;
+}
+.FP__txt:hover{
+    color: var(--black-text);
+}
+.Email__inp_fld,.Password__inp_fld{
+    border-radius: 12px !important;
+    border: 1px solid var(--Persian-Green) !important;
+}
+.Email__inp_fld,.Password__inp_fld,.Main_btn,.form-check-input:focus{
+   box-shadow: none !important;
+}
+.Email__inp_fldtxt,.Password__inp_fldtxt,.label1_txt{
+font-family:var(--Roboto-FF);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+}
+/*==============Password_Eye_validation================*/
+.Eye_vaidation{
+    position: relative;
+}
+#togglePassword{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.fa-eye{
+    color:var(--Persian-Green);
+}
+.fa-eye-slash:before{
+    color:var(--Persian-Green);
+}
+/* ==================End=============== */
+
+/* ================Button_Animation_ON _Hover=============*/
+.Main_btn:hover {
+    background: linear-gradient(45deg, #075655, #1dd2cf);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(71, 70, 70, 0.15);
+}
+.form-check-input:checked{
+    background-color: var(--Persian-Green) !important;
+    border-color:var(--Tron-Blue) !important ;
+}
+/* =============Side_img_Animation============================= */
+@keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .img_anim:hover {
+    animation: slideInFromLeft 1s ease-out forwards; 
+  }
+/* =============Login-Page-End===============*/
+
+/* ================Forgot_Password====================*/
+.Bg_Img_FP{
+    background-image:url(../images/Loginpage/FG-bg.png) ;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.Btn_S a{
+    text-decoration: none !important;
+
+}
+/* ===============Verification-Page============================*/
+.square-input-Shape{
+    height: 54px;
+    width: 56px !important; /* Adjust the height as needed */
+    border-radius: 0;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid var(--Persian-Green) !important; 
+}
+.Top-pg-img{
+    width:150px;
+}
+/* ===============Verification-Page-End============================*/
+
+/* ==================Landing-Page==================================== */
+.Banner__img{
+    background-image: url(../images/LandingPage/Banner.jpg);
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+.Banner__img::before {
+        content: "";
+        position: absolute;
+        /* top:0;
+        left: 0; */
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: none;
+        z-index: 1;
+      } 
+.Banner__img_txt{
+        z-index: 1;
+    }     
+.Banner__paratxt{
+    font-family:var(--Roboto-FF);
+    font-size: 21px;
+    font-weight: 400;
+    width: 68%;
+    padding: 8px;    
+   }
+.Span_txt{
+    color: var(--Tron-Blue);
+}  
+.img_Surgry{
+    width: 80%;
+}
+.card-person-img{
+    width: 27% !important;
+}
+.Card-FB{
+    border-radius: 20px !important;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 25%;
+}
+.Feedback-avatar{
+    margin-top: -18px;
+}
+.Title_txt{
+    color: var(--Persian-Green);
+}
+.Feedback_hub{
+    width: 8%;
+}
+.fa-star{
+    color:var(--rating) ;
+}
+.Card-fb-txt{
+    color: var(--black-text) !important;
+    font-weight: 600;
+    font-family: var(--Roboto-FF);
+}
+.FB_txt1{
+color:var(--black-text);
+font-family: var(--Roboto-FF);
+font-size: 24px;
+font-weight: 700;
+line-height: normal;
+}
+.Banner-below-txt{
+color:var(--black-text);
+font-family: var(--Roboto-FF);
+font-style: normal;
+font-weight:500;
+}

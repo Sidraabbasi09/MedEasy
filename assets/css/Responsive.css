@@ -1,0 +1,9 @@
+/* ================Login_pg_button==================== */
+@media (min-width: 320px) and (max-width: 475px){
+    .Main_btn{
+       width: 100% !important;
+    }
+    .Loginby_Ggl,.Loginby_fb{
+        width: 20%;
+    }
+}

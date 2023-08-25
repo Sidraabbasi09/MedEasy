@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!--============= Style Sheet===============-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ===============BootStrap Cdn============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- =============FontAwesome-CDN=============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- =============Responsive-Style-Sheet======-->
+    <link rel="stylesheet" href="./assets/css/Responsive.css">
+</head>
+
+<body>
+    <!-- =============Login-Page-Start============= -->
+    <section class="bg_Clr">
+        <div class="container p-5">
+            <div class="row Bg_Img_S">
+                <!-- =============Login-SideImg_Section============= -->
+                <div class="col-md-6">
+                    <img class="pt-5 pt-6 img_anim" src="./assets/images/Loginpage/log-removebg-preview.png" alt=""
+                        width="90%">
+                </div>
+                <!-- =============Login-Form-Section============= -->
+                <div class="col-md-6">
+                    <div class="Login_Form_S">
+                        <h4 class=" text-center Heading__txt mt-5 mt-6">Welcome</h4>
+                        <p class=" text-center paragraph_txt mb-4">Login and Get Started</p>
+                        <label for="exampleFormControlInput1" class="form-label label1_txt mb-3">I Am:</label>
+                        <div class="d-flex mb-3">
+                            <div class="form-check form-check-inline Admin_radio_btn">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label pe-4" for="inlineRadio1">Admin</label>
+                            </div>
+                            <div class="form-check form-check-inline Member_radio_btn mx-3 mb-3">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2" checked>
+                                <label class="form-check-label pe-3" for="inlineRadio2">Member</label>
+                            </div>
+                        </div>
+                        <div class="mb-1">
+                            <label for="exampleInputEmail1" class="form-label Email__inp_fldtxt ">Email or Phone
+                                number</label>
+                            <input type="email" class="form-control Email__inp_fld w-100" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="">
+                            <label for="exampleInputPassword1" class="form-label Password__inp_fldtxt">Password</label>
+                            <div class="Eye_vaidation">
+                                <input type="password" class="form-control Password__inp_fld  w-100"
+                                    id="exampleInputPassword1">
+                                <i class="fa solid fa-eye" id="togglePassword"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end ">
+                            <a href="./Forget-Password.html" class="FP__Link">
+                                <p class=" FP__txt ">Forgot Password?</p>
+                            </a>
+                        </div>
+
+                        <div class="text-center mb-4">
+                            <p class="paragraph_txt">Or</p>
+                            <a href=""><img class="Loginby_Ggl" src="./assets/images/Loginpage/Ellipse 1.png"
+                                    alt=""></a>
+                            <a href=""><img class="Loginby_fb" src="./assets/images/Loginpage/Ellipse 2.png" alt=""></a>
+                        </div>
+                        <div class="d-flex justify-content-center mb-5">
+                            <button class="btn Main_btn w-100" type="button">Log In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+    <!-- ==========Js-Plugins=============-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
