@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <!--============= Style Sheet===============-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- ===============BootStrap Cdn============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- =============FontAwesome-CDN=============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- =============Responsive-Style-Sheet======-->
+    <link rel="stylesheet" href="./assets/css/Responsive.css" />
+    <!-- =============jquery======-->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+</head>
+<body>
+    
+<!-- ============Medicine Detail Form===================-->
+<section class="bg_Clr">
+    <div class="container-fluid contt">
+        <div class="row p-sm-5 p-1">
+            <div class="col-lg-5 col-md-12 col-sm-12  mb-sm-0 mb-3 bd-rds">
+                <div class="Searching_Med_S">
+                    <div class="d-flex justify-content-between">
+                        <p class="LC_txt mt-4">Location</p>
+                    </div>
+                    <div>
+                        <label class="ps-3 mb-3">Within:</label>
+                    </div>
+                    <div class="d-flex flex-sm-row flex-column justify-content-around mb-5 p-sm-0 p-2">
+                        <div class="btn-group Distance_drp mb-sm-0 mb-2 mx-sm-0">
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">10 Miles</option>
+                                <option>10 Miles</option>
+                                <option>20 Miles</option>
+                                <option>30 Miles</option>
+                                <option>40 Miles</option>
+                                <option>50 Miles</option>
+                                <option>60 Miles</option>
+                                <option>70 Miles</option>
+                                <option>80 Miles</option>
+                                <option>90 Miles</option>
+                                <option>100 Miles</option>
+                            </select>
+                        </div>
+                        <label class="ps-sm-3 mb-sm-0 mb-2 of_txt text-center">of</label>
+                        <input class="px-3 Distance_drp" type="text" placeholder="Post/Zip Code">
+                    </div>
+                    <!-- ====================Cities DropDown=====================-->
+                    <div class="btn-group Cities_drp mx-sm-3 mx-2 mb-4">
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Islamabad</option>
+                            <option>Rawalpindi</option>
+                            <option>Islamabad</option>
+                            <option>Karachi</option>
+                            <option>Lahore</option>
+                        </select>
+                    </div>
+                    <!-- ====================Medicine Type Checkbox============-->
+                    <div class="d-flex justify-content-between toggle-content">
+                        <label class="ps-3 mb-3 Text_MedType">Type</label>
+                    </div>
+                    <div class="d-flex flex-column ms-3 mb-5 content">
+                        <div class="form-check">
+                            <input class="form-check-input input_bgclr" type="checkbox" value="" id="flexCheckChecked"
+                                checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Tablet
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input input_bgclr" type="checkbox" value="" id="flexCheckChecked"
+                                checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Syrup
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input input_bgclr" type="checkbox" value="" id="flexCheckChecked"
+                                checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Suspension
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input input_bgclr" type="checkbox" value="" id="flexCheckChecked"
+                                checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Drip
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input input_bgclr" type="checkbox" value="" id="flexCheckChecked"
+                                checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Injection
+                            </label>
+                        </div>
+                    </div>
+                    <!-- ================== Medicine Quantity DropDown===================== -->
+
+                    <div class="d-flex justify-content-between mb-2">
+                        <label class="ps-3 mb-3 Text_MedType">Quantity</label>
+                    
+                    </div>
+                    <div class="quantity-picker ms-3 mb-4">
+                        <button class="quantity-button" id="decrease">-</button>
+                        <input class="quantity-input" type="number" id="quantity" value="1" min="1">
+                        <button class="quantity-button" id="increase">+</button>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <label class="ps-3  Text_MedType mt-2">Manufacturing Date</label>
+                  
+                    </div>
+                    <div class="ms-3 mb-5">
+                        <input class="exp_med_date" type="date">
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <label class="ps-3  Text_MedType mt-2">Expiration Date</label>
+                       
+                    </div>
+                    <div class="ms-3 mb-5">
+                        <input class="exp_med_date" type="date">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn button_Apply_Filter mb-5" type="button">apply filter to result </button>
+                    </div>
+                </div>
+            </div>
+            <!--==========================Cards===============================-->
+            <div class="col-lg-7">
+                <div class="row ps-sm-3 p-0 gy-3">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card medicine_crdss ">
+                            <img src="./assets/images/Searchmedicine/card1.png" class="card-img-top panadol_crd_img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Panadol</h5>
+                                <p class="card-text medicine_txtt">There are many variations of passages of Lorem
+                                    Ipsum available,</p>
+                                <p class="history-card-txt">Location: <span>United State</span></p>
+                                <p class="text-dark history-card-txt">Total:12</p>
+                                <div class="d-flex justify-content-between mb-5">
+                                    <span class="">Mfg : 09/03/2022</span>
+                                    <span>Exp : 09/03/2022</span>
+                                </div>
+                                <a href="#" class="btn See_Detail_btn">See Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card medicine_crdss ">
+                            <img src="./assets/images/Searchmedicine/card2.png" class="card-img-top panadol_crd_img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Panadol</h5>
+                                <p class="card-text medicine_txtt">There are many variations of passages of Lorem
+                                    Ipsum available,</p>
+                                <p>Location: <span>United State</span></p>
+                                <p class="text-dark">Total:12</p>
+                                <div class="d-flex justify-content-between mb-5">
+                                    <span>Mfg : 09/03/2022</span>
+                                    <span>Exp : 09/03/2022</span>
+
+                                </div>
+                                <a href="#" class="btn See_Detail_btn">See Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card medicine_crdss ">
+                            <img src="./assets/images/Searchmedicine/card3.png" class="card-img-top panadol_crd_img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Panadol</h5>
+                                <p class="card-text medicine_txtt">There are many variations of passages of Lorem
+                                    Ipsum available,</p>
+                                <p>Location: <span>United State</span></p>
+                                <p class="text-dark">Total:12</p>
+                                <div class="d-flex justify-content-between mb-5">
+                                    <span>Mfg : 09/03/2022</span>
+                                    <span>Exp : 09/03/2022</span>
+                                </div>
+                                <a href="#" class="btn See_Detail_btn">See Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card medicine_crdss ">
+                            <img src="./assets/images/Searchmedicine/card4.png" class="card-img-top panadol_crd_img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Panadol</h5>
+                                <p class="card-text medicine_txtt">There are many variations of passages of Lorem
+                                    Ipsum available,</p>
+                                <p>Location: <span>United State</span></p>
+                                <p class="text-dark">Total:12</p>
+                                <div class="d-flex justify-content-between mb-5">
+                                    <span>Mfg : 09/03/2022</span>
+                                    <span>Exp : 09/03/2022</span>
+                                </div>
+                                <a href="#" class="btn See_Detail_btn">See Detail</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div>
+                    <img class="ftr_logo_img w-25 mt-3" src="./assets/images/LandingPage/medeasy.png" alt="">
+                    <p class="Ftr_txtsb mt-3 w-75">Lorem ipsum dolor sit amet consectetur. Adipiscing adipiscing
+                        hendrerit
+                        volutpat ut elit pellentesque quis et. Blandit vitae sit odio donec enim. Gravida eget
+                        pulvinar ut ultricies viverra in mauris. Molestie donec cursus eget egestas et luctus.
+                        Amet
+                        semper amet porttitor ultricies quis.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <p class="mt-3 FB_txt1">Contact Us</p>
+                <div class="d-flex mt-4">
+                    <div>
+                        <p>Address:</p>
+                        <p>Phone:</p>
+                        <p>Email:</p>
+                    </div>
+                    <div>
+                        <p class="ps-2">City Mall, United State</p>
+                        <p>001343664387</p>
+                        <p>xyz@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-12">
+                <p class="mt-3 FB_txt1">Links</p>
+                <a href="#" class=" d-flex facebook-text-A text-dark face_A mb-3 text-decoration-none pointer mt-4">
+                    <div class="link-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <span class="ms-2 link-txt ">Facebook</span>
+                </a>
+                <a href="#" class=" d-flex mb-3 text-dark text-decoration-none pointer">
+                    <div class="link-icon">
+                        <i class="fab fa-twitter "></i>
+                    </div>
+                    <span class="ms-2 link-txt ">Twitter</span>
+                </a>
+                <a href="#" class="d-flex facebook-text-A text-dark insta_A  mb-3 text-decoration-none pointer">
+                    <div class="link-icon">
+                        <i class="fab fa-instagram link-icon"></i>
+                    </div>
+                    <span class="ms-2 link-txt">Instagram</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+<script src="./assets/js/script.js"></script>
+<!-- ======================Js-Plugins=========================================-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/po  pper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>

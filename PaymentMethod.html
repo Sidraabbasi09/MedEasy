@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <!--============= Style Sheet===============-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- ===============BootStrap Cdn============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- =============FontAwesome-CDN=============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- =============Responsive-Style-Sheet======-->
+    <link rel="stylesheet" href="./assets/css/Responsive.css" />
+    <!-- =============jquery======-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- ===============Payment-Form=================== -->
+    <!--------- Banner-Section --------->
+    <div class="container-fluid Payment__Banner__img p-0">
+        <!-- Banner content -->
+        <div class="Banner__img_txt d-flex flex-column justify-content-center align-items-center m-auto z-index-1">
+            <h2 class="text-center text-white text-capitalize">
+                Select Payment Method
+            </h2>
+        </div>
+    </div>
+    <!-- Payment Form -->
+    <section class="bg_Clr">
+        <div class="container">
+          <div class="row">
+            <form action="" class="w-100 d-flex flex-wrap justify-content-center method_payment_form mb-5 gap-3">
+                <div class="form-check form-check-inline radio-card mb-3 mb-sm-0 d-flex align-items-center">
+                    <input type="radio" name="paymentOption" id="card1" class="form-check-input me-2" checked />
+                    <label for="card1" class="form-check-label w-50">
+                        <div class="card crd-img-border-A text-center p-2">
+                            <img src="./assets/images/PaymentPages/Cardimg1.png" alt="ATM Card 1" class="card-img-top w-100" />
+                        </div>
+                    </label>
+                </div>
+            
+                <div class="form-check form-check-inline radio-card mb-3 mb-sm-0 d-flex align-items-center">
+                    <input type="radio" name="paymentOption" id="card2" class="form-check-input me-2" />
+                    <label for="card2" class="form-check-label w-50">
+                        <div class="card crd-img-border-A text-center p-2">
+                            <img src="./assets/images/PaymentPages/Cardimg2.png" alt="ATM Card 2" class="card-img-top w-100" />
+                        </div>
+                    </label>
+                </div>
+            
+                <div class="form-check form-check-inline radio-card mb-3 mb-sm-0 d-flex align-items-center">
+                    <input type="radio" name="paymentOption" id="card3" class="form-check-input me-2" />
+                    <label for="card3" class="form-check-label w-50">
+                        <div class="card crd-img-border-A text-center p-2">
+                            <img src="./assets/images/PaymentPages/Cardimg3.png" alt="ATM Card 3" class="card-img-top w-100" />
+                        </div>
+                    </label>
+                </div>
+            
+                <div class="form-check form-check-inline radio-card d-flex align-items-center">
+                    <input type="radio" name="paymentOption" id="cash" class="form-check-input me-2" />
+                    <label for="cash" class="form-check-label ">
+                        <div class="card crd-img-border-A text-center p-2">
+                            <h5 class="card-title cash_A">Cash On Delivery</h5>
+                        </div>
+                    </label>
+                </div>
+            </form>
+          </div>
+        <div class="row">
+        <div class="col-md-12 d-flex flex-column justify-content-center align-items-center ">
+                <!-- Input Fields -->
+                <div class="w-100 d-flex flex-column align-items-center ">
+                    <div class="DN-field w-50 mt-5 mb-4">
+                        <label for="name" class="form-label Email__inp_fldtxt">Cardholder’s Name</label>
+                        <input type="text" class="form-control Email__inp_fld" id="input-name"
+                            placeholder="PAULINA CHIMAROKE">
+                    </div>
+                    <!-- <div class="mb-4 w-50">
+                            <label for="name" class="form-label Email__inp_fldtxt">Card Number</label>
+                            <input type="text" class="form-control Email__inp_fld" id="input-name"
+                                placeholder="9870 3456 7890 6473">
+                        </div> -->
+                    <div class="DN-field mb-4 w-50 position-relative">
+                        <label for="name" class="form-label Email__inp_fldtxt">Card Number</label>
+                        <input type="text" class="form-control Email__inp_fld input-with-image" id="input-name"
+                            placeholder="9870 3456 7890 6473 ">
+                        <div class="input-image">
+                            <img src="./assets/images/PaymentPages/mastercard 1.png" alt="Card Image" width="15%">
+                        </div>
+                    </div>
+
+                    <!-- Date input -->
+                    <div class="DN-field w-50 d-flex flex-column flex-sm-row justify-content-between mb-3">
+                        <div class="mb-2 mb-sm-0 w-100">
+                            <label for="date" class="form-label Email__inp_fldtxt">Expiry</label>
+                            <input type="date" class="form-control Email__inp_fld " id="input-date">
+                        </div>
+                        <!-- CCv input -->
+                        <div class="ms-0 ms-sm-2 w-100">
+                            <label for="ccv" class="form-label Email__inp_fldtxt">CCV</label>
+                            <input type="text" class="form-control Email__inp_fld" id="input-ccv">
+                        </div>
+                    </div>
+                    <div class="mb-5 DN-field w-50">
+                        <label for="name" class="form-label Email__inp_fldtxt">Discount Code</label>
+                        <input type="text" class="form-control Email__inp_fld" id="input-name"
+                            placeholder="CHIKAMSO-20-OFF">
+                    </div>
+
+                </div>
+                <!-- Button -->
+                <div class="Btn_S DN-field w-50 mb-5 ">
+                    <a href="">
+                        <button class="btn Main_btn w-50" type="button">Send</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <img class="ftr_logo_img w-25 mt-3" src="./assets/images/LandingPage/medeasy.png" alt="">
+                        <p class="Ftr_txtsb mt-3 w-75">Lorem ipsum dolor sit amet consectetur. Adipiscing adipiscing
+                            hendrerit
+                            volutpat ut elit pellentesque quis et. Blandit vitae sit odio donec enim. Gravida eget
+                            pulvinar ut ultricies viverra in mauris. Molestie donec cursus eget egestas et luctus.
+                            Amet
+                            semper amet porttitor ultricies quis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <p class="mt-3 FB_txt1">Contact Us</p>
+                    <div class="d-flex mt-4">
+                        <div>
+                            <p>Address:</p>
+                            <p>Phone:</p>
+                            <p>Email:</p>
+                        </div>
+                        <div>
+                            <p class="ps-2">City Mall, United State</p>
+                            <p>001343664387</p>
+                            <p>xyz@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-12">
+                    <p class="mt-3 FB_txt1">Links</p>
+                    <a href="#" class=" d-flex facebook-text-A text-dark face_A mb-3 text-decoration-none pointer mt-4">
+                        <div class="link-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <span class="ms-2 link-txt ">Facebook</span>
+                    </a>
+                    <a href="#" class=" d-flex mb-3 text-dark text-decoration-none pointer">
+                        <div class="link-icon">
+                            <i class="fab fa-twitter "></i>
+                        </div>
+                        <span class="ms-2 link-txt ">Twitter</span>
+                    </a>
+                    <a href="#" class="d-flex facebook-text-A text-dark insta_A  mb-3 text-decoration-none pointer">
+                        <div class="link-icon">
+                            <i class="fab fa-instagram link-icon"></i>
+                        </div>
+                        <span class="ms-2 link-txt">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- ======================Js-Plugins=========================================-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/po  pper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

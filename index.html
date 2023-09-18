@@ -14,28 +14,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- =============Responsive-Style-Sheet======-->
     <link rel="stylesheet" href="./assets/css/Responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <!-- Banner-Section -->
     <div class="container-fluid Banner__img p-0">
         <div class="Banner__img_txt d-flex flex-column justify-content-center align-items-center m-auto z-index-1">
-            <h2 class="text-center text-white">Be a Pillar of Hope <span class="Span_txt"> Donate Medicines Today</span>
+            <h2 class="text-center text-white">
+                Be a Pillar of Hope
+                <span class="Span_txt">Donate Medicines Today</span>
             </h2>
-            <p class="Banner__paratxt text-white text-center">Empower communities in need by donating essential
-                medicines.
+            <p class="Banner__paratxt text-white text-center">
+                Empower communities in need by donating essential medicines.
             </p>
             <div class="Btn_S">
-                <a href="./Verify-email.html" class=" d-flex justify-content-center mb-5 ">
-                    <button class="btn Feedback_btn  px-5" type="button">Contact Us</button>
+                <a href="./Verify-email.html" class="d-flex justify-content-center mb-5">
+                    <button class="btn Feedback_btn px-5" type="button">Contact Us</button>
                 </a>
-                <!-- <a href=""><button class="btn btn-lg CU__btn px-4 mb-5">Donate Us</button></a> -->
             </div>
         </div>
     </div>
     <!-- =============Section-1========================= -->
     <section class="bg_Clr">
         <div class="container pt-5">
+            <div class="row mb-5">
+                <div class="Banner_below-btn d-flex justify-content-center align-items-center">
+                    <button class="btn UPL_Pres_btn px-sm-4 px-3 d-flex justify-content-center align-items-center"
+                        type="submit"><i class="fa-solid fa-upload"></i><span class="ps-2 Button_txt">Upload
+                            Prescription</span></button>
+                    <button class="btn UPL_Pres_btn px-sm-4  px-3 mx-3 d-flex justify-content-center align-items-center"
+                        type="submit"><i class="fa-solid fa-hand-holding-medical"></i><span
+                            class="ps-2 Button_txt">HealthCare Team<br>
+                            Consultation</span></button>
+                </div>
+            </div>
             <div class="row mb-5">
                 <div class=" col-lg-6 col-md-6  col-sm-12">
                     <div>
@@ -52,7 +65,7 @@
                                 <img src="./assets/images/LandingPage/Feedback Hub.png" class=" w-25 mx-3" alt="">
                             </div>
                             <p class=" Banner-below-txt  ps-1">Give Us Your</p>
-                            <button class="btn Feedback_btn px-5" type="submit">Feedback</button>
+                            <button class="btn Feedback_btn mb-sm-0 mb-4 px-5" type="submit">Feedback</button>
 
                         </div>
                     </div>
@@ -74,79 +87,92 @@
             <div class="row gy-1">
                 <div class=" col-lg-4 col-md-12 col-sm-12 ">
                     <div class="card Card-FB">
-                        <div class="Feedback-avatar ms-3">
-                            <img src="./assets/images/LandingPage/Cardavatar.png" class="card-img-top card-person-img"
-                                alt="...">
-                        </div>
-                        <div class="card-body ps-4 ">
-                            <p class="PARA_1">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi
-                                vitae.Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.Lorem
-                                ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.</p>
-                            <div class="d-flex justify-content-between">
-                                <div class="Name_Adrs ">
-                                    <p class="Card-fb-txt">Cameron Williamson</p>
-                                    <p class="WR_txt">‘Westheimer Rd. Santa Ana</p>
-                                </div>
-                                <div>
-                                    <i class="fa-solid fa-star"><span class="ratings ps-1"> 48240</span></i>
+                        <div class="our-team">
+                            <div class="picture mt-3 mb-2">
+                                <img class="img-fluid" src="./assets/images/LandingPage/Cardavatar.png">
+                            </div>
+                            <div class="team-content">
+                                <div class="card-body ps-4">
+                                    <p class="PARA_1">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim
+                                        morbi
+                                        vitae.Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi
+                                        vitae.Lorem
+                                        ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.</p>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <div class="Name_Adrs ">
+                                            <p class="Card-fb-txt">Cameron Williamson</p>
+                                            <p class="crd-btm-txt">‘Westheimer Rd. Santa Ana</p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-star"><span class="ratings-txt ps-1"> 48240</span></i>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
                 <div class=" col-lg-4 col-md-12 col-sm-12 ">
                     <div class="card Card-FB">
-                        <div class="Feedback-avatar ms-3">
-                            <img src="./assets/images/LandingPage/Cardavatar.png" class="card-img-top card-person-img"
-                                alt="...">
-                        </div>
-                        <div class="card-body ps-4 ">
-                            <p class="PARA_1">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi
-                                vitae.Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.Lorem
-                                ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.</p>
-                            <div class="d-flex justify-content-between">
-                                <div class="Name_Adrs ">
-                                    <p class="Card-fb-txt">Cameron Williamson</p>
-                                    <p class="WR_txt">‘Westheimer Rd. Santa Ana</p>
-                                </div>
-                                <div>
-                                    <i class="fa-solid fa-star"><span class="ratings ps-1"> 48240</span></i>
+                        <div class="our-team">
+                            <div class="picture mt-3 mb-2">
+                                <img class="img-fluid" src="./assets/images/LandingPage/Cardavatar.png">
+                            </div>
+                            <div class="team-content">
+                                <div class="card-body ps-4">
+                                    <p class="PARA_1">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim
+                                        morbi
+                                        vitae.Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi
+                                        vitae.Lorem
+                                        ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.</p>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <div class="Name_Adrs ">
+                                            <p class="Card-fb-txt">Cameron Williamson</p>
+                                            <p class="crd-btm-txt">‘Westheimer Rd. Santa Ana</p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-star"><span class="ratings-txt ps-1"> 48240</span></i>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
                 <div class=" col-lg-4 col-md-12 col-sm-12 ">
                     <div class="card Card-FB">
-                        <div class="Feedback-avatar ms-3">
-                            <img src="./assets/images/LandingPage/Cardavatar.png" class="card-img-top card-person-img"
-                                alt="...">
-                        </div>
-                        <div class="card-body ps-4">
-                            <p class="PARA_1">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi
-                                vitae.Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.Lorem
-                                ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.</p>
-                            <div class="d-flex justify-content-between">
-                                <div class="Name_Adrs ">
-                                    <p class="Card-fb-txt">Cameron Williamson</p>
-                                    <p class="WR_txt">‘Westheimer Rd. Santa Ana</p>
-                                </div>
-                                <div>
-                                    <i class="fa-solid fa-star"><span class="ratings ps-1"> 48240</span></i>
+                        <div class="our-team">
+                            <div class="picture mt-3 mb-2">
+                                <img class="img-fluid" src="./assets/images/LandingPage/Cardavatar.png">
+                            </div>
+                            <div class="team-content">
+                                <div class="card-body ps-4">
+                                    <p class="PARA_1">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim
+                                        morbi
+                                        vitae.Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi
+                                        vitae.Lorem
+                                        ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.</p>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <div class="Name_Adrs ">
+                                            <p class="Card-fb-txt">Cameron Williamson</p>
+                                            <p class="crd-btm-txt">‘Westheimer Rd. Santa Ana</p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-star"><span class="ratings-txt ps-1"> 48240</span></i>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         </div>
-
     </section>
-    </div>
     <!--==================Footer====================== -->
     <footer>
         <div class="container">
@@ -169,39 +195,39 @@
                             <p>Phone:</p>
                             <p>Email:</p>
                         </div>
-                        <div class="APE_txt2">
+                        <div>
                             <p class="ps-2">City Mall, United State</p>
                             <p>001343664387</p>
-                            <p>kashif678@gmail.com</p>
+                            <p>xyz@gmail.com</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-2 col-12">
                     <p class="mt-3 FB_txt1">Links</p>
-                    <div class="d-flex">
-                        <div class="d-flex flex-column">
-                            <i class="fa-brands fa-facebook icons_S"><span class="px-3 icons_txtt"> Facebook</span></i>
-                            <i class="fa-brands fa-twitter icons_S"> <span class="p-3  icons_txtt">Twitter</span></i>
-                            <i class="fa-brands fa-instagram icons_S"> <span
-                                    class="p-3  icons_txtt">Instagram</span></i>
+                    <a href="#" class=" d-flex facebook-text-A text-dark face_A mb-3 text-decoration-none pointer mt-4">
+                        <div class="link-icon">
+                            <i class="fa-brands fa-facebook"></i>
                         </div>
-                    </div>
+                        <span class="ms-2 link-txt ">Facebook</span>
+                    </a>
+                    <a href="#" class=" d-flex mb-3 text-dark text-decoration-none pointer">
+                        <div class="link-icon">
+                            <i class="fab fa-twitter "></i>
+                        </div>
+                        <span class="ms-2 link-txt ">Twitter</span>
+                    </a>
+                    <a href="#" class="d-flex facebook-text-A text-dark insta_A  mb-3 text-decoration-none pointer">
+                        <div class="link-icon">
+                            <i class="fab fa-instagram link-icon"></i>
+                        </div>
+                        <span class="ms-2 link-txt">Instagram</span>
+                    </a>
                 </div>
             </div>
         </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <!-- ==========Js-Plugins=============-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
