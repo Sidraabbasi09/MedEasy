@@ -18,75 +18,223 @@
 </head>
 
 <body>
-    <!-- Banner-Section -->
-    <div class="container-fluid Banner__img p-0">
+    <header class="sticky-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container py-1">
+                <a class="navbar-brand" href="#">
+                    <div class="w-50">
+                        <img src="./assets/images/LandingPage/logo.png" alt="" class="logo_pic" />
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav_link_elements mt-2">
+                        <li class="nav-item">
+                            <a class="nav-link me-4 " aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="./aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="./MedicineDonation.html">Donate Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="./Contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-lg-flex align-items-center">
+                        <div class="search-icon me-4 mb-md-0 mb-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                        </div>
+
+                        <!---------------- Modal -------------->
+                        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                         <div class="modal-dialog">
+                         <div class="modal-content">
+                         <div class="modal-body">
+                            <p class="Banner-below-txt">Search</p>
+                          <input type="text" class="form-control bordr_col_add" placeholder="Search" />
+                          </div>
+                         <div class="modal-footer">
+                         <button type="button" class="btn btn-inner-modal" data-bs-dismiss="modal">Close</button>
+                         <button type="button" class="btn  btn-inner-modal">Search</button>
+                         </div>
+                         </div>
+                         </div>
+                        </div>
+                        <a href="Registration.html" class="btn text-nowrap btn_donate_A me-3 mb-sm-0 mb-3">
+                        Sign Up
+                        </a>
+
+                        <a href="./Login.html" class="btn text-nowrap btn_donate_B me-3">
+                          Sign In
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header> 
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="container-fluid Banner__img_A p-0">
         <div class="Banner__img_txt d-flex flex-column justify-content-center align-items-center m-auto z-index-1">
             <h2 class="text-center text-white">
                 Be a Pillar of Hope
-                <span class="Span_txt">Donate Medicines Today</span>
+                <span class="Span_txt">Donate or Receive Medicines Today</span>
             </h2>
             <p class="Banner__paratxt text-white text-center">
                 Empower communities in need by donating essential medicines.
             </p>
-            <div class="Btn_S">
-                <a href="./Verify-email.html" class="d-flex justify-content-center mb-5">
-                    <button class="btn Feedback_btn px-5" type="button">Contact Us</button>
+          <div class="d-flex">
+              <div class="Btn_S me-3">
+                <a href="./MedicineDonation.html" class="d-flex justify-content-center mb-5">
+                    <button class="btn banner_btn_A " type="button">Donate Medicine</button>
                 </a>
             </div>
+              <div class="Btn_S">
+                <a href="./Searchmedicine.html" class="d-flex justify-content-center mb-5">
+                    <button class="btn banner_btn_B " type="button">Get Medicine</button>
+                </a>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+     <div class="container-fluid Banner__img_B p-0">
+        <div class="Banner__img_txt d-flex flex-column justify-content-center align-items-center m-auto z-index-1">
+            <h2 class="text-center text-white">
+                Be a Pillar of Hope
+                <span class="Span_txt">Donate or Receive Medicines Today</span>
+            </h2>
+            <p class="Banner__paratxt text-white text-center">
+                Empower communities in need by donating essential medicines.
+            </p>
+            <div class="d-flex">
+              <div class="Btn_S me-3">
+                <a href="./MedicineDonation.html" class="d-flex justify-content-center mb-5">
+                    <button class="btn banner_btn_A " type="button">Donate Medicine</button>
+                </a>
+            </div>
+              <div class="Btn_S">
+                <a href="./Searchmedicine.html" class="d-flex justify-content-center mb-5">
+                    <button class="btn banner_btn_B" type="button">Get Medicine</button>
+                </a>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+    <div class="container-fluid Banner__img_C p-0">
+        <div class="Banner__img_txt d-flex flex-column justify-content-center align-items-center m-auto z-index-1">
+            <h2 class="text-center text-white">
+                Be a Pillar of Hope
+                <span class="Span_txt">Donate or Receive Medicines Today</span>
+            </h2>
+            <p class="Banner__paratxt text-white text-center">
+                Empower communities in need by donating essential medicines.
+            </p>
+            <div class="d-flex">
+              <div class="Btn_S me-3">
+                <a href="./MedicineDonation.html" class="d-flex justify-content-center mb-5">
+                    <button class="btn banner_btn_A " type="button">Donate Medicine</button>
+                </a>
+            </div>
+              <div class="Btn_S">
+                <a href="./Searchmedicine.html" class="d-flex justify-content-center mb-5">
+                    <button class="btn banner_btn_B " type="button">Get Medicine</button>
+                </a>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- ================================Every Two Seconds=========================== -->
+<section class="bg_Clr">
+<div class="container pt-5 ">
+        <h3 class="impact_head text-center">Save a life today Give Medicine</h3>
+    </div>
+<div class="container save-life p-3 mt-sm-5">
+        <div class="row d-flex justify-content-between mt-3 mt-sm-4 ">
+            <!-- <div class="col-lg-2"></div> -->
+            <div class="col-lg-4 col-sm-4 second-increase text-center text-center">
+                <h1 class="mt-sm-2">98</h1>
+            </div>
+            <div class="col-lg-6 col-sm-8 second-content text-center text-sm-start">
+                <h2>Every two seconds...</h2>
+                <p>Someone in the city needs medicine. This number counter shows how many people have needed medicine
+                    since you arrived on this page.</p>
+            </div>
+            <div class="col-lg-2"></div>
         </div>
     </div>
     <!-- =============Section-1========================= -->
-    <section class="bg_Clr">
-        <div class="container pt-5">
-            <div class="row mb-5">
-                <div class="Banner_below-btn d-flex justify-content-center align-items-center">
-                    <button class="btn UPL_Pres_btn px-sm-4 px-3 d-flex justify-content-center align-items-center"
-                        type="submit"><i class="fa-solid fa-upload"></i><span class="ps-2 Button_txt">Upload
-                            Prescription</span></button>
-                    <button class="btn UPL_Pres_btn px-sm-4  px-3 mx-3 d-flex justify-content-center align-items-center"
-                        type="submit"><i class="fa-solid fa-hand-holding-medical"></i><span
-                            class="ps-2 Button_txt">HealthCare Team<br>
-                            Consultation</span></button>
-                </div>
-            </div>
-            <div class="row mb-5">
+    
+        <div class="container pt-md-3">
+            <div class="row mb-5 gy-5 mt-3 mt-lg-0 ">
                 <div class=" col-lg-6 col-md-6  col-sm-12">
-                    <div>
-                        <p class="Banner-below-txt">Hello and Welcome To</p>
-                        <h3 class="Title_txt">MEDEASY</h3>
+                    <div class="px-sm-3">
+                        <p class="Banner-below-txt mt-sm-5">Hello and Welcome To</p>
+                        <h3 class="Title_txt">MedEasy</h3>
                         <div>
-                            <p class="para2c w-75">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi
-                                vitae.Lorem ipsum
-                                dolor sit amet consectetur. Commodo dictumst enim morbi vitae.Lorem ipsum dolor sit amet
-                                consectetur. Commodo dictumst enim morbi vitae.</p>
+                            <p class="para2c mb-5">At MedEasy, we believe in helping people get the medicines they need. We understand how important it is to have access to essential medicines, and we're here to make it easier for both donors and receivers.</p>
                         </div>
                         <div>
                             <div class="w-50 mb-3">
-                                <img src="./assets/images/LandingPage/Feedback Hub.png" class=" w-25 mx-3" alt="">
-                            </div>
-                            <p class=" Banner-below-txt  ps-1">Give Us Your</p>
-                            <button class="btn Feedback_btn mb-sm-0 mb-4 px-5" type="submit">Feedback</button>
+                            <button class=" btn Feedback_btn mb-sm-0 mb-4 px-4">
+                        <img src="./assets/images/LandingPage/Feedback Hub.png" class=" me-3 p-0" alt="" width="35px"><span>Feedback</span>
+                        </button>
 
                         </div>
                     </div>
                 </div>
-                <div class=" col-lg-6 col-md-6  col-sm-12">
+                 </div>
+                <div class=" col-lg-6 col-md-6  col-sm-12 mb-sm-0 mb-5">
                     <img class="img_Surgry" src="./assets/images/LandingPage/Surgery.png" alt="">
                 </div>
-            </div>
-            <div class="row mb-5">
+           
+            <div class="row pt-md-5 pb-sm-0 pb-5">
                 <div class="col-md-12">
-                    <p class="FB_txt1 w-sm-25 w-100">What our satisfied
-                        Clients say about us
+                    <p class="FB_txt1 w-sm-25 w-100 mb-2">What our satisfied
+                        Donors say about us
                     </p>
-                    <p class="w-50">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.Lorem
-                        ipsum dolor sit </p>
+                    <p class="w-50 content_para_sec1">We thank each donor for their invaluable contributions in making healthcare more accessible to those in need. </p>
                 </div>
             </div>
             <!-- ================Feedback Cards=======================-->
-            <div class="row gy-1">
-                <div class=" col-lg-4 col-md-12 col-sm-12 ">
-                    <div class="card Card-FB">
+            <div class="row gy-5 pb-4">
+                <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#cardCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#cardCarousel" data-bs-slide-to="2"></li>
+             </ol>
+            <div class="carousel-inner">
+             <div class="carousel-item active">
+                <div class="row gy-md-1 gy-5 mb-5 pb-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="card Card-FB">
                         <div class="our-team">
                             <div class="picture mt-3 mb-2">
                                 <img class="img-fluid" src="./assets/images/LandingPage/Cardavatar.png">
@@ -95,13 +243,91 @@
                                 <div class="card-body ps-4">
                                     <p class="PARA_1">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim
                                         morbi
-                                        vitae.Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi
-                                        vitae.Lorem
-                                        ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.</p>
+                                        vitae.Lorem ipsum dolor sit amet consectetur.</p>
                                     <div class="d-flex justify-content-between mt-4">
                                         <div class="Name_Adrs ">
-                                            <p class="Card-fb-txt">Cameron Williamson</p>
-                                            <p class="crd-btm-txt">‘Westheimer Rd. Santa Ana</p>
+                                            <p class="Card-fb-txt mb-2">Cameron Williamson</p>
+                                            <p class="crd-btm-txt mb-0">‘Westheimer Rd. Santa Ana</p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-star"><span class="ratings-txt ps-1"> 48240</span></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="card Card-FB">
+                        <div class="our-team">
+                            <div class="picture mt-3 mb-2">
+                                <img class="img-fluid" src="./assets/images/LandingPage/Cardavatar.png">
+                            </div>
+                            <div class="team-content">
+                                <div class="card-body ps-4">
+                                    <p class="PARA_1">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim
+                                        morbi
+                                        vitae.Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <div class="Name_Adrs ">
+                                            <p class="Card-fb-txt mb-2">Cameron Williamson</p>
+                                            <p class="crd-btm-txt mb-0">‘Westheimer Rd. Santa Ana</p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-star"><span class="ratings-txt ps-1"> 48240</span></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                     <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="card Card-FB">
+                        <div class="our-team">
+                            <div class="picture mt-3 mb-2">
+                                <img class="img-fluid" src="./assets/images/LandingPage/Cardavatar.png">
+                            </div>
+                            <div class="team-content">
+                                <div class="card-body ps-4">
+                                    <p class="PARA_1">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim
+                                        morbi
+                                        vitae.Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <div class="Name_Adrs ">
+                                            <p class="Card-fb-txt mb-2">Cameron Williamson</p>
+                                            <p class="crd-btm-txt mb-0">‘Westheimer Rd. Santa Ana</p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-star"><span class="ratings-txt ps-1"> 48240</span></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <div class="row gy-md-1 gy-5 mb-5 pb-4">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                         <div class="card Card-FB">
+                        <div class="our-team">
+                            <div class="picture mt-3 mb-2">
+                                <img class="img-fluid" src="./assets/images/LandingPage/Cardavatar.png">
+                            </div>
+                            <div class="team-content">
+                                <div class="card-body ps-4">
+                                    <p class="PARA_1">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim
+                                        morbi
+                                        vitae.Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <div class="Name_Adrs ">
+                                            <p class="Card-fb-txt mb-2">Cameron Williamson</p>
+                                            <p class="crd-btm-txt mb-0">‘Westheimer Rd. Santa Ana</p>
                                         </div>
                                         <div>
                                             <i class="fa-solid fa-star"><span class="ratings-txt ps-1"> 48240</span></i>
@@ -112,9 +338,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class=" col-lg-4 col-md-12 col-sm-12 ">
-                    <div class="card Card-FB">
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="card Card-FB">
                         <div class="our-team">
                             <div class="picture mt-3 mb-2">
                                 <img class="img-fluid" src="./assets/images/LandingPage/Cardavatar.png">
@@ -123,13 +349,11 @@
                                 <div class="card-body ps-4">
                                     <p class="PARA_1">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim
                                         morbi
-                                        vitae.Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi
-                                        vitae.Lorem
-                                        ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.</p>
+                                        vitae.Lorem ipsum dolor sit amet consectetur.</p>
                                     <div class="d-flex justify-content-between mt-4">
                                         <div class="Name_Adrs ">
-                                            <p class="Card-fb-txt">Cameron Williamson</p>
-                                            <p class="crd-btm-txt">‘Westheimer Rd. Santa Ana</p>
+                                            <p class="Card-fb-txt mb-2">Cameron Williamson</p>
+                                            <p class="crd-btm-txt mb-0">‘Westheimer Rd. Santa Ana</p>
                                         </div>
                                         <div>
                                             <i class="fa-solid fa-star"><span class="ratings-txt ps-1"> 48240</span></i>
@@ -140,9 +364,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class=" col-lg-4 col-md-12 col-sm-12 ">
-                    <div class="card Card-FB">
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="card Card-FB">
                         <div class="our-team">
                             <div class="picture mt-3 mb-2">
                                 <img class="img-fluid" src="./assets/images/LandingPage/Cardavatar.png">
@@ -151,13 +375,11 @@
                                 <div class="card-body ps-4">
                                     <p class="PARA_1">Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim
                                         morbi
-                                        vitae.Lorem ipsum dolor sit amet consectetur. Commodo dictumst enim morbi
-                                        vitae.Lorem
-                                        ipsum dolor sit amet consectetur. Commodo dictumst enim morbi vitae.</p>
+                                        vitae.Lorem ipsum dolor sit amet consectetur.</p>
                                     <div class="d-flex justify-content-between mt-4">
                                         <div class="Name_Adrs ">
-                                            <p class="Card-fb-txt">Cameron Williamson</p>
-                                            <p class="crd-btm-txt">‘Westheimer Rd. Santa Ana</p>
+                                            <p class="Card-fb-txt mb-2">Cameron Williamson</p>
+                                            <p class="crd-btm-txt mb-0">‘Westheimer Rd. Santa Ana</p>
                                         </div>
                                         <div>
                                             <i class="fa-solid fa-star"><span class="ratings-txt ps-1"> 48240</span></i>
@@ -167,66 +389,398 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
+            <a class="carousel-control-prev" href="#cardCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#cardCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+             </a>
+            </div>
+            </div>
+     </div>
+     </div>
+        
+        <!-- ==================================Live Donation Data=============================== -->
+           <div class="container-fluid Banner__img_down_A p-0">
+        <div class="Banner__img_txt d-flex flex-column justify-content-center align-items-center m-auto z-index-1">
+            <h2 class="text-center text-white">
+                
+              Interested in understanding 
+            
+                <span class="Span_txt"> our daily influence?</span>
+            </h2>
+            <p class="Banner__paratxt text-white text-center">
+            Discover how your contributions are making a difference. Explore the impact of your donations and see how they are transforming lives
+            </p>
+            <div class="Btn_S">
+                <a href="./Verify-email.html" class="d-flex justify-content-center mb-5">
+                    <button class="btn Feedback_btn px-5" type="button">
+                Check out donation data
+              </button>
+                </a>
+            </div>
         </div>
-    </section>
+    </div> 
+    <!-- =============================Testimonial=================================== -->
+    <!-- Carousel wrapper -->
+      <div class="container pt-5  py-3">
+        <div class="row">
+               <h3 class="text-center mb-5 impact_head">Medicine Receivers</h3>
+            <!-- Carousel wrapper -->
+            <div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                <h5 class="mb-3">Maria Kate</h5>
+                                <!-- <p>Photographer</p> -->
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                    nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                    fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                    doloremque.
+                                    <i class="fas fa-quote-right ps-2"></i>
+
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                <h5 class="mb-3">John Doe</h5>
+                                <!-- <p>Web Developer</p> -->
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                    nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                    fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                    doloremque.
+                                     <i class="fas fa-quote-right ps-2"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="rounded-circle shadow-1-strong mb-4"
+                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+                            style="width: 150px;" />
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                <h5 class="mb-3">Anna Deynah</h5>
+                                <!-- <p>UX Designer</p> -->
+                                <p class="text-muted">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                    nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                    fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                    doloremque.
+                                     <i class="fas fa-quote-right ps-2"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Carousel wrapper -->
+        </div>
+    </div>
+    <!-- ==========================Counter=========================== -->
+    <div class="container count_A">
+        <div class="row py-sm-5  py-3">
+          <h3 class="impact_head">Our impact</h3>
+          <div class="col-md-4 col-sm-12">
+            <div class="counter-container mt-sm-3 d-flex flex-column justify-content-center align-items-center">
+                <i class="fas fa-hands-helping count_icon mb-3"></i>
+                <p class="donation_shipped_text w-75 mb-0">
+                Medicine Requests
+              </p> 
+              <span class="counter" data-target="33898">33898</span>
+               
+              
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="counter-container mt-sm-3 d-flex flex-column justify-content-center align-items-center">
+                 <i class="fas fa-pills mb-3 count_icon"></i>
+                <p class="donation_shipped_text w-75 mb-0">
+                Medicine Received
+              </p>
+              <span class="counter" data-target="33898">33898</span>
+              
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="counter-container mt-sm-3 d-flex flex-column justify-content-center align-items-center">
+                <i class="fas fa-comment mb-3 count_icon"></i>
+              <p class="donation_shipped_text w-75 mb-0">
+          Feedback Received
+              </p>
+              <span class="counter" data-target="33898">33898</span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- ========================================FAQ================================= -->
+     <div class="container pt-sm-4  py-3">
+        <h3 class="text-center mb-5 impact_head">FAQ</h3>
+
+        <div class="accordion mb-5" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item mt-sm-5">
+                <h2 class="accordion-header" id="faqHeading1">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                         How can I donate medicines online?
+                    </button>
+                </h2>
+                <div id="faqCollapse1" class="accordion-collapse collapse " aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                         To donate medicines online, you can visit our website and fill out the donation form. We will guide you through the process of donating safely and securely.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                         What types of medicines are accepted for donation?
+                    </button>
+                </h2>
+                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                         We accept donations of unused and unexpired prescription and over-the-counter medicines. Please ensure that the medicines are in good condition and have not expired.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                          Can I donate expired medicines?
+                    </button>
+                </h2>
+                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We do not accept donations of expired medicines. Please ensure that all donated medicines are within their expiration dates.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </div>
+        </section>
     <!--==================Footer====================== -->
-    <footer>
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div>
-                        <img class="ftr_logo_img w-25 mt-3" src="./assets/images/LandingPage/medeasy.png" alt="">
-                        <p class="Ftr_txtsb mt-3 w-75">Lorem ipsum dolor sit amet consectetur. Adipiscing adipiscing
-                            hendrerit
-                            volutpat ut elit pellentesque quis et. Blandit vitae sit odio donec enim. Gravida eget
-                            pulvinar ut ultricies viverra in mauris. Molestie donec cursus eget egestas et luctus. Amet
-                            semper amet porttitor ultricies quis.</p>
+    <footer class="bg-white">
+        <div class="container ">
+            <div class="row mt-sm-5 mt-3">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="">
+                        <div class="w-100 mb-3">
+              <img src="./assets/images/LandingPage/logo.png" alt="" class="logo_pic" />
+                        </div>
+                        <p class="footer_cont_txt_A text-capitalize">Lorem ipsum dolor sit amet consectetur. Adipiscing
+                            adipiscing hendrerit
+                            volutpat ut elit
+                            pellentesque quis et. Blandit
+                            vitae sit odio donec enim. Gravida eget pulvinar ut ultricies viverra in mauris. Molestie
+                            donec
+                            cursus eget egestas et
+                            luctus. Amet semper amet porttitor ultricies quis.Commodo dictumst
+                      enim morbi vitae.Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                    <p class="mt-3 FB_txt1">Contact Us</p>
-                    <div class="d-flex mt-4">
-                        <div>
-                            <p>Address:</p>
-                            <p>Phone:</p>
-                            <p>Email:</p>
-                        </div>
-                        <div>
-                            <p class="ps-2">City Mall, United State</p>
-                            <p>001343664387</p>
-                            <p>xyz@gmail.com</p>
-                        </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 ">
+                    <p class="mb-3 footer_contct_A text-capitalize">Contact Us</p>
+                    <div class="d-flex mb-3">
+                            <i class="fa-solid fa-location-dot para_lite_A text-capitalize me-2"></i><span
+                            class="text-capitalize para_lite_B ">Rawalpindi, Pakistan</span>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fa-solid fa-phone para_lite_A text-capitalize me-2"></i><span
+                        class=" para_lite_B ">051-2468938</span>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fa-solid fa-envelope para_lite_A text-capitalize me-2"></i></p> <span
+                        class=" para_lite_B ">Kashif678@gmail.com</span>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-12">
-                    <p class="mt-3 FB_txt1">Links</p>
-                    <a href="#" class=" d-flex facebook-text-A text-dark face_A mb-3 text-decoration-none pointer mt-4">
-                        <div class="link-icon">
-                            <i class="fa-brands fa-facebook"></i>
-                        </div>
-                        <span class="ms-2 link-txt ">Facebook</span>
-                    </a>
-                    <a href="#" class=" d-flex mb-3 text-dark text-decoration-none pointer">
-                        <div class="link-icon">
-                            <i class="fab fa-twitter "></i>
-                        </div>
-                        <span class="ms-2 link-txt ">Twitter</span>
-                    </a>
-                    <a href="#" class="d-flex facebook-text-A text-dark insta_A  mb-3 text-decoration-none pointer">
-                        <div class="link-icon">
-                            <i class="fab fa-instagram link-icon"></i>
-                        </div>
-                        <span class="ms-2 link-txt">Instagram</span>
-                    </a>
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                    <div class="">
+                        <p class="mb-3 footer_contct_A text-capitalize">Links</p>
+
+                        <a href="#" class=" d-flex facebook-text-A  face_A mb-2 text-decoration-none pointer">
+                            <div class="icons-col ">
+                                <i class="fa-brands fa-facebook icon-fa facebook_color me-2"></i>
+                            </div>
+                            <span class=" facebook-A">Facebook</span>
+                        </a>
+                        <a href="#" class=" d-flex facebook-text-A twiitwe_A mb-2  text-decoration-none pointer">
+                            <div class="icons-col">
+                                <i class="fab fa-twitter  icon-fa twitter_color me-2"></i>
+                            </div>
+                            <span class="facebook-A">Twitter</span>
+                        </a>
+                        <a href="#" class="d-flex facebook-text-A insta_A  mb-4 text-decoration-none pointer">
+                            <div class="instagram-icon ">
+                                <i class="fab fa-instagram insta_A instagram_color me-2"></i>
+                            </div>
+                            <span class=" facebook-A insta_A">Instagram</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                   <div class="">
+                        <p class="mb-3 footer_contct_A text-capitalize">Help</p>
+
+                        <a href="./FAQ.html" class=" d-flex  mb-2 text-dark text-decoration-none pointer">
+                            <span class="">FAQ</span>
+                        </a>
+                        <a href="./TermsandConditions.html" class=" d-flex text-dark  mb-2  text-decoration-none pointer">
+                            <span class="text-nowrap">Terms and Conditions</span>
+                        </a>
+                        <a href="./Privacypolicy.html" class="d-flex text-dark pt-sm-2 mb-2 text-decoration-none pointer">
+                            <span class="">Privacy Policy</span>
+                        </a>
+                    </div> 
                 </div>
             </div>
-        </div>
-        </div>
+            <hr/>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8 col-12">
+                    <div class="footer__row__2 mt-sm-3">
+                        <ul>
+                            <li>
+                                <p>Copyright 2023</p>
+                            </li>
+                            <div class="">|</div>
+                            <li>
+                                <p>MedEasy</p>
+                            </li>
+                            <div class="">|</div>
+                            <li>
+                                <p>All Right Reserved</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     </footer>
+    <!-- ------------------Counter Js--------------------------------- -->
+    <script>
+      function animateCounter() {
+        const counters = document.querySelectorAll(".counter");
+
+        counters.forEach((counter) => {
+          const target = +counter.getAttribute("data-target");
+          const increment = target / 100; // You can adjust the increment speed
+
+          let currentValue = 0;
+
+          const updateCounter = () => {
+            currentValue += increment;
+            if (currentValue >= target) {
+              currentValue = target;
+            }
+
+            counter.textContent = Math.round(currentValue);
+
+            if (currentValue < target) {
+              requestAnimationFrame(updateCounter);
+            }
+          };
+
+          updateCounter();
+        });
+      }
+
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return rect.top >= 0 && rect.bottom <= window.innerHeight;
+      }
+
+      function checkVisibility() {
+        const counters = document.querySelectorAll(".counter");
+
+        counters.forEach((counter) => {
+          if (isInViewport(counter)) {
+            animateCounter();
+          }
+        });
+      }
+
+      window.addEventListener("scroll", checkVisibility);
+      window.addEventListener("load", checkVisibility);
+    </script>
+    <!-- -----------------------------Every Two Seconds-------------------------- -->
+    <script>
+        // Get the h1 element by its class name
+        const counterElement = document.querySelector('.second-increase h1');
+
+        // Function to update the counter
+        function updateCounter() {
+            // Parse the current value of the h1 element and increment it by 1
+            let currentValue = parseInt(counterElement.textContent);
+            currentValue++;
+
+            // Update the text content of the h1 element with the new value
+            counterElement.textContent = currentValue;
+        }
+
+        // Call the updateCounter function every 2 seconds (2000 milliseconds)
+        setInterval(updateCounter, 2000);
+    </script>
+    <!-- --------------------Testimonial---------------------- -->
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <!-- ==========Js-Plugins=============-->

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact</title>
     <!--============= Style Sheet===============-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- ===============BootStrap Cdn============-->
@@ -13,13 +14,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- =============Responsive-Style-Sheet======-->
     <link rel="stylesheet" href="./assets/css/Responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
+    <!-- -------------------------Header------------------------------------ -->
+    <header class="sticky-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container py-1">
+                <a class="navbar-brand" href="#">
+                    <div class="w-50">
+                        <img src="./assets/images/LandingPage/logo.png" alt="" class="logo_pic" />
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav_link_elements mt-2">
+                        <li class="nav-item">
+                            <a class="nav-link me-4" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="./aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="./MedicineDonation.html">Donate Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="./Contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-lg-flex align-items-center">
+                        <div class="search-icon me-4 mb-md-0 mb-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                        </div>
+
+                        <!---------------- Modal -------------->
+                        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                         <div class="modal-dialog">
+                         <div class="modal-content">
+                         <div class="modal-body">
+                            <p class="Banner-below-txt">Search</p>
+                          <input type="text" class="form-control bordr_col_add" placeholder="Search" />
+                          </div>
+                         <div class="modal-footer">
+                         <button type="button" class="btn btn-inner-modal" data-bs-dismiss="modal">Close</button>
+                         <button type="button" class="btn  btn-inner-modal">Search</button>
+                         </div>
+                         </div>
+                         </div>
+                        </div>
+                        <a href="Registration.html" class="btn text-nowrap btn_donate_A me-3 mb-sm-0 mb-3">
+                        Sign Up
+                        </a>
+
+                        <a href="./Login.html" class="btn text-nowrap btn_donate_B me-3">
+                          Sign In
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- =============Forget-Page-Start============= -->
     <section class="bg_Clr">
         <div class="container  p-sm-5 p-3">
-            <div class="row Bg_Img_FP m-0">
+            <div class="row Bg_Img_FP">
                 <div class="col-lg-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="contact-img" src="./assets/images/Loginpage/contact.png" alt="" width="100%">
                 </div>
@@ -48,60 +111,102 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div>
-                        <img class="ftr_logo_img w-25 mt-3" src="./assets/images/LandingPage/medeasy.png" alt="">
-                        <p class="Ftr_txtsb mt-3 w-75">Lorem ipsum dolor sit amet consectetur. Adipiscing adipiscing
-                            hendrerit
-                            volutpat ut elit pellentesque quis et. Blandit vitae sit odio donec enim. Gravida eget
-                            pulvinar ut ultricies viverra in mauris. Molestie donec cursus eget egestas et luctus.
-                            Amet
-                            semper amet porttitor ultricies quis.</p>
+   <!--==================Footer====================== -->
+   <footer class="bg-white">
+    <div class="container ">
+        <div class="row mt-sm-5 mt-3">
+            <div class="col-lg-5 col-md-12 col-sm-12">
+                <div class="">
+                    <div class="w-100 mb-3">
+          <img src="./assets/images/LandingPage/logo.png" alt="" class="logo_pic" />
                     </div>
+                    <p class="footer_cont_txt_A text-capitalize">Lorem ipsum dolor sit amet consectetur. Adipiscing
+                        adipiscing hendrerit
+                        volutpat ut elit
+                        pellentesque quis et. Blandit
+                        vitae sit odio donec enim. Gravida eget pulvinar ut ultricies viverra in mauris. Molestie
+                        donec
+                        cursus eget egestas et
+                        luctus. Amet semper amet porttitor ultricies quis.Commodo dictumst
+                  enim morbi vitae.Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                    <p class="mt-3 FB_txt1">Contact Us</p>
-                    <div class="d-flex mt-4">
-                        <div>
-                            <p>Address:</p>
-                            <p>Phone:</p>
-                            <p>Email:</p>
-                        </div>
-                        <div>
-                            <p class="ps-2">City Mall, United State</p>
-                            <p>001343664387</p>
-                            <p>xyz@gmail.com</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 ">
+                <p class="mb-3 footer_contct_A text-capitalize">Contact Us</p>
+                <div class="d-flex mb-3">
+                        <i class="fa-solid fa-location-dot para_lite_A text-capitalize me-2"></i><span
+                        class="text-capitalize para_lite_B ">Rawalpindi, Pakistan</span>
                 </div>
-                <div class="col-lg-2 col-md-2 col-12">
-                    <p class="mt-3 FB_txt1">Links</p>
-                    <a href="#" class=" d-flex facebook-text-A text-dark face_A mb-3 text-decoration-none pointer mt-4">
-                        <div class="link-icon">
-                            <i class="fa-brands fa-facebook"></i>
+                <div class="d-flex mb-3">
+                    <i class="fa-solid fa-phone para_lite_A text-capitalize me-2"></i><span
+                    class=" para_lite_B ">051-2468938</span>
+                </div>
+                <div class="d-flex mb-3">
+                    <i class="fa-solid fa-envelope para_lite_A text-capitalize me-2"></i></p> <span
+                    class=" para_lite_B ">Kashif678@gmail.com</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+                <div class="">
+                    <p class="mb-3 footer_contct_A text-capitalize">Links</p>
+
+                    <a href="#" class=" d-flex facebook-text-A  face_A mb-2 text-decoration-none pointer">
+                        <div class="icons-col ">
+                            <i class="fa-brands fa-facebook icon-fa facebook_color me-2"></i>
                         </div>
-                        <span class="ms-2 link-txt ">Facebook</span>
+                        <span class=" facebook-A">Facebook</span>
                     </a>
-                    <a href="#" class=" d-flex mb-3 text-dark text-decoration-none pointer">
-                        <div class="link-icon">
-                            <i class="fab fa-twitter "></i>
+                    <a href="#" class=" d-flex facebook-text-A twiitwe_A mb-2  text-decoration-none pointer">
+                        <div class="icons-col">
+                            <i class="fab fa-twitter  icon-fa twitter_color me-2"></i>
                         </div>
-                        <span class="ms-2 link-txt ">Twitter</span>
+                        <span class="facebook-A">Twitter</span>
                     </a>
-                    <a href="#" class="d-flex facebook-text-A text-dark insta_A  mb-3 text-decoration-none pointer">
-                        <div class="link-icon">
-                            <i class="fab fa-instagram link-icon"></i>
+                    <a href="#" class="d-flex facebook-text-A insta_A  mb-4 text-decoration-none pointer">
+                        <div class="instagram-icon ">
+                            <i class="fab fa-instagram insta_A instagram_color me-2"></i>
                         </div>
-                        <span class="ms-2 link-txt">Instagram</span>
+                        <span class=" facebook-A insta_A">Instagram</span>
                     </a>
                 </div>
             </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+               <div class="">
+                    <p class="mb-3 footer_contct_A text-capitalize">Help</p>
+
+                    <a href="./FAQ.html" class=" d-flex  mb-2 text-dark text-decoration-none pointer">
+                        <span class="">FAQ</span>
+                    </a>
+                    <a href="./TermsandConditions.html" class=" d-flex text-dark  mb-2  text-decoration-none pointer">
+                        <span class="text-nowrap">Terms and Conditions</span>
+                    </a>
+                    <a href="./Privacypolicy.html" class="d-flex text-dark pt-sm-2 mb-2 text-decoration-none pointer">
+                        <span class="">Privacy Policy</span>
+                    </a>
+                </div> 
+            </div>
         </div>
+        <hr/>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8 col-12">
+                <div class="footer__row__2 mt-sm-3">
+                    <ul>
+                        <li>
+                            <p>Copyright 2023</p>
+                        </li>
+                        <div class="">|</div>
+                        <li>
+                            <p>MedEasy</p>
+                        </li>
+                        <div class="">|</div>
+                        <li>
+                            <p>All Right Reserved</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </footer>
+</footer>
     <!-- ==========Js-Plugins=============-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

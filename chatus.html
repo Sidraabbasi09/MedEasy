@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Us</title>
+    <!--============= Style Sheet===============-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ===============BootStrap Cdn============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- =============FontAwesome-CDN=============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- =============Responsive-Style-Sheet======-->
+    <link rel="stylesheet" href="./assets/css/Responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<section class="bg_Clr">
+    <div class="container">
+        <div class="row ">
+           <div class="col-md-12">
+            <div class="main-content p-sm-4">               
+                <section class="message-area add_color_sec">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="chat-area">
+                                    <div class="chatlist">
+                                        <div class="modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="chat-header">
+                                                    <div class="msg-search">
+                                                        <h4 class="fst-italic">Messages</h4>
+                                                        <a class="add" href="#">
+                                                        </a>
+                                                        <div class="col-4"><a class="add" href="#">
+                                                            </a>
+                                                            <ul class="moreoption"><a class="add" href="#">
+                                                                </a>
+                                                                <li class="navbar nav-item dropdown"><a class="add" href="#">
+                                                                    </a><a class="nav-link dropdown-toggle" href="#" role="button"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false"><i
+                                                                            class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <hr class="dropdown-divider">
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">Something else
+                                                                                here</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group my-3">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text search_mess12">
+                                                                <i class="fa-solid fa-magnifying-glass icon_ser"></i>
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="form-control input_mess12"
+                                                            placeholder="Search or new chat" aria-label="Text input with checkbox"
+                                                            fdprocessedid="ehg3pc">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body chat_body">
+                                                    <div class="chat-lists">
+                                                        <div class="tab-content" id="myTabContent">
+                                                            <div class="tab-pane fade show active" id="Open" role="tabpanel"
+                                                                aria-labelledby="Open-tab">
+                                                                <div class="chat-list">
+                                                                    <a href="#" class="d-flex  justify-content-between">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                            <span class="active"></span>
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                
+                                                                        <div class="flex-grow-2 ms-3">
+                                                                            <p class=" yest_txt">Yesterday
+                                                                            </p>
+                                                                            <span
+                                                                                class="translate-middle badge rounded-pill bg-warning  float-end my-3">
+                                                                                9
+                                                                                <span class="visually-hidden">unread
+                                                                                    messages</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex  justify-content-between">
+                
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                            <span class="active"></span>
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                
+                                                                        <div class="flex-grow-2 ms-3">
+                                                                            <p class="yest_txt">Yesterday
+                                                                            </p>
+                                                                            <span
+                                                                                class="translate-middle badge rounded-pill bg-warning  float-end my-3">
+                                                                                9
+                                                                                <span class="visually-hidden">unread
+                                                                                    messages</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex  justify-content-between">
+                
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                            <span class="active"></span>
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                
+                                                                        <div class="flex-grow-2 ms-3">
+                                                                            <p class="yest_txt">Yesterday
+                                                                            </p>
+                                                                            <span
+                                                                                class="translate-middle badge rounded-pill bg-warning  float-end my-3">
+                                                                                9
+                                                                                <span class="visually-hidden">unread
+                                                                                    messages</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex  justify-content-between">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                            <span class="active"></span>
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                
+                                                                        <div class="flex-grow-2 ms-3">
+                                                                            <p class="yest_txt">Yesterday
+                                                                            </p>
+                                                                            <span
+                                                                                class="translate-middle badge rounded-pill bg-warning  float-end my-3">
+                                                                                9
+                                                                                <span class="visually-hidden">unread
+                                                                                    messages</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex  justify-content-between">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                            <span class="active"></span>
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                
+                                                                        <div class="flex-grow-2 ms-3">
+                                                                            <p class="yest_txt">Yesterday
+                                                                            </p>
+                                                                            <span
+                                                                                class="translate-middle badge rounded-pill bg-warning  float-end my-3">
+                                                                                9
+                                                                                <span class="visually-hidden">unread
+                                                                                    messages</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex  justify-content-between">
+                
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                            <span class="active"></span>
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                        <div class="flex-grow-2 ms-3">
+                                                                            <p class="yest_txt">Yesterday
+                                                                            </p>
+                                                                            <span
+                                                                                class="translate-middle badge rounded-pill bg-warning  float-end my-3">
+                                                                                9
+                                                                                <span class="visually-hidden">unread
+                                                                                    messages</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex  justify-content-between">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                            <span class="active"></span>
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                
+                                                                        <div class="flex-grow-2 ms-3">
+                                                                            <p class="yest_txt">Yesterday
+                                                                            </p>
+                                                                            <span
+                                                                                class="translate-middle badge rounded-pill bg-warning  float-end my-3">
+                                                                                9
+                                                                                <span class="visually-hidden">unread
+                                                                                    messages</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="Closed" role="tabpanel"
+                                                                aria-labelledby="Closed-tab">
+                                                                <div class="chat-list">
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                            <span class="active"></span>
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene </h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#" class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="./assets/images/LandingPage/userimage.png"
+                                                                                alt="user img" style="width:50px">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            <h3>Rachel Greene</h3>
+                                                                            <p>You wait for notice</p>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- chatbox -->
+                                    <div class="chatbox">
+                                        <div class="modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="msg-head">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-12">
+                                                            <div class="d-sm-flex align-items-center mb-2">
+                                                                <span class="chat-icon"><img class="img-fluid"
+                                                                        src="https://mehedihtml.com/chatbox/assets/img/arroleftt.svg"
+                                                                        alt="image title"></span>
+                                                                <div class="flex-shrink-0 ">
+                                                                    <img class="img-fluid ms-sm-0 ms-4 side_img_mess"
+                                                                        src="./assets/images/LandingPage/userimage.png" alt="user img">
+                                                                </div>
+                                                                <div class="flex-grow-1 ms-3">
+                                                                    <h3 class="">Rachel Greene</h3>
+                                                                    <p class="">You Wait For Notice </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-12 text-lg-end pe-sm-3">
+                                                            <a class="btn btn-primary text-nowrap" href="#" role="button"><i
+                                                                    class="fa-solid fa-phone me-2 show_contact_icon"></i> Show
+                                                                contact</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body main_chat">
+                                                    <div class="msg-body">
+                                                        <ul class="px-0">
+                                                            <li class="sender">
+                                                                <p> Hey, Are you there? </p>
+                                                                <span class="time">10:06 am</span>
+                                                            </li>
+                                                            <li class="sender">
+                                                                <p> Hey, Are you there? </p>
+                                                                <span class="time">10:16 am</span>
+                                                            </li>
+                                                            <li class="repaly">
+                                                                <p>yes!</p>
+                                                                <span class="time">10:20 am</span>
+                                                            </li>
+                                                            <li class="sender">
+                                                                <p> Hey, Are you there? </p>
+                                                                <span class="time">10:26 am</span>
+                                                            </li>
+                                                            <li class="sender">
+                                                                <p> Hey, Are you there? Lorem ipsum dolor
+                                                                    sit amet consectetur
+                                                                    adipisicing elit. Minima,
+                                                                    voluptas.dsfsfsdfsdfsdf sdafgashfas
+                                                                    asdfsghfga</p>
+                                                                <span class="time">10:32 am</span>
+                                                            </li>
+                                                            <li class="repaly">
+                                                                <p>How are you?</p>
+                                                                <span class="time">10:35 am</span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="divider">
+                                                                    <h6>Today</h6>
+                                                                </div>
+                                                            </li>
+                
+                                                            <li class="repaly">
+                                                                <p> yes, tell me</p>
+                                                                <span class="time">10:36 am</span>
+                                                            </li>
+                                                            <li class="repaly">
+                                                                <p>yes... on it</p>
+                                                                <span class="time">just now</span>
+                                                            </li>
+                
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="send-box">
+                                                    <form action="">
+                                                        <input type="text" class="form-control w-75" aria-label="message…"
+                                                            placeholder="Write message…" fdprocessedid="nyhm7i">
+                
+                                                        <button type="button" fdprocessedid="254i9" class="text-nowrap w-50"><i
+                                                                class="fa fa-paper-plane" aria-hidden="true"></i>
+                                                            Send</button>
+                                                    </form>
+                
+                                                    <div class="send-btns">
+                                                        <div class="attach">
+                                                            <div class="button-wrapper">
+                                                                <span class="label">
+                                                                    <img class="img-fluid"
+                                                                        src="https://mehedihtml.com/chatbox/assets/img/upload.svg"
+                                                                        alt="image title"> attached file
+                                                                </span><input type="file" name="upload" id="upload" class="upload-box"
+                                                                    placeholder="Upload File" aria-label="Upload File">
+                                                            </div>
+                
+                                                            <select class="form-control" id="exampleFormControlSelect1"
+                                                                fdprocessedid="xt7vc">
+                                                                <option>Select template</option>
+                                                                <option>Template 1</option>
+                                                                <option>Template 2</option>
+                                                            </select>
+                                                            <div class="add-apoint">
+                                                                <a href="#" data-toggle="modal" data-target="#exampleModal4"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                                        viewBox="0 0 16 16" fill="none">
+                                                                        <path
+                                                                            d="M8 16C3.58862 16 0 12.4114 0 8C0 3.58862 3.58862 0 8 0C12.4114 0 16 3.58862 16 8C16 12.4114 12.4114 16 8 16ZM8 1C4.14001 1 1 4.14001 1 8C1 11.86 4.14001 15 8 15C11.86 15 15 11.86 15 8C15 4.14001 11.86 1 8 1Z"
+                                                                            fill="#7D7D7D"></path>
+                                                                        <path
+                                                                            d="M11.5 8.5H4.5C4.224 8.5 4 8.276 4 8C4 7.724 4.224 7.5 4.5 7.5H11.5C11.776 7.5 12 7.724 12 8C12 8.276 11.776 8.5 11.5 8.5Z"
+                                                                            fill="#7D7D7D"></path>
+                                                                        <path
+                                                                            d="M8 12C7.724 12 7.5 11.776 7.5 11.5V4.5C7.5 4.224 7.724 4 8 4C8.276 4 8.5 4.224 8.5 4.5V11.5C8.5 11.776 8.276 12 8 12Z"
+                                                                            fill="#7D7D7D"></path>
+                                                                    </svg> Appoinment</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- chatbox -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </div>
+           </div>
+        </div>
+    </div>
+</section>
+  <!-- ---------------Chat-box------------- -->
+  <script>
+    jQuery(document).ready(function () {
+
+        $(".chat-list a").click(function () {
+            $(".chatbox").addClass('showbox');
+            return false;
+        });
+
+        $(".chat-icon").click(function () {
+            $(".chatbox").removeClass('showbox');
+        });
+    });
+</script>
+<script>
+    //  ----------------Notification-Dropdwown--------// 
+    $(document).ready(function () {
+        $(".profile .icon_wrap").click(function () {
+            $(this).parent().toggleClass("active");
+            $(".notifications").removeClass("active");
+        });
+
+        $(".notifications .icon_wrap").click(function () {
+            $(this).parent().toggleClass("active");
+            $(".profile").removeClass("active");
+        });
+
+        $(".show_all .link").click(function () {
+            $(".notifications").removeClass("active");
+            $(".popup").show();
+        });
+
+        $(".close").click(function () {
+            $(".popup").hide();
+        });
+    });
+
+    // Variable to keep track of the active notification
+    let activeNotification = null;
+
+    // JavaScript function to toggle the visibility of notification content
+    function toggleNotification(notificationId) {
+        // Get the selected notification
+        const selectedNotification = document.getElementById(notificationId);
+
+        // If there is an active notification, hide it
+        if (activeNotification && activeNotification !== selectedNotification) {
+            activeNotification.style.display = 'none';
+        }
+
+        // Toggle the visibility of the selected notification
+        if (selectedNotification.style.display === 'none' || selectedNotification.style.display === '') {
+            selectedNotification.style.display = 'block';
+            activeNotification = selectedNotification;
+        } else {
+            selectedNotification.style.display = 'none';
+            activeNotification = null;
+        }
+    }      
+</script>
+ <!-- ==========Js-Plugins=============-->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+ integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+ crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+ crossorigin="anonymous"></script>
+</body>
+</html>

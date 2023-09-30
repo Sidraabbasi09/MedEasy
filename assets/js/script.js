@@ -38,42 +38,22 @@ function animateCounters() {
 
 animateCounters();
 
-setInterval(animateCounters, 2000); 
+setInterval(animateCounters, 2000);
 
 // ==================My account-setting page===========================//
-  
-           // Function to show content//
-        function showContent(contentId) {
-            // Hide all content sections
-            document.querySelectorAll(".hidden").forEach(function (el) {
-                el.style.display = "none";
-            });
 
-            // Show the selected content section
-            document.getElementById(contentId).style.display = "block";
-        }
-
-        // By default, show the "Account Settings" content
-        showContent("account-setting");
-//  ======================End===========================================//       
-// ===================Quantity-picker==================================//
-const decreaseButton = document.getElementById("decrease");
-const increaseButton = document.getElementById("increase");
-const quantityInput = document.getElementById("quantity");
-
-decreaseButton.addEventListener("click", () => {
-  if (parseInt(quantityInput.value) > 1) {
-    quantityInput.value = parseInt(quantityInput.value) - 1;
-  }
-});
-
-increaseButton.addEventListener("click", () => {
-  quantityInput.value = parseInt(quantityInput.value) + 1;
-});
-
-$(document).ready(function () {
-  $(".toggle-content").click(function () {
-    $(this).toggleClass("active");
-    $(this).next(".content").slideToggle();
+// Function to show content//
+function showContent(contentId) {
+  // Hide all content sections
+  document.querySelectorAll(".hidden").forEach(function (el) {
+    el.style.display = "none";
   });
-});
+
+  // Show the selected content section
+  document.getElementById(contentId).style.display = "block";
+}
+
+// By default, show the "Account Settings" content
+showContent("account-setting");
+//  ======================End===========================================//
+

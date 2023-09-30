@@ -2,334 +2,519 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payment</title>
-    <!--============= Style Sheet===============-->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- ===============BootStrap Cdn============-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <!-- =============FontAwesome-CDN=============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <!-- =============Responsive-Style-Sheet======-->
-    <link rel="stylesheet" href="./assets/css/Responsive.css" />
-    <!-- =============jquery======-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account</title>
+  <!--============= Style Sheet===============-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- ===============BootStrap Cdn============-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- =============FontAwesome-CDN=============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!-- =============Responsive-Style-Sheet======-->
+  <link rel="stylesheet" href="./assets/css/Responsive.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-    <section>
-        <div class="container">
-            <div class="row for-border-btm">
-                <div class="col-md-12 ">
-                    <div class="d-flex mb-5 ">
-                        <img class="account-img" src="./assets/images/PaymentPages/Ellipse 3.png" alt="">
-                        <div class="ms-5 mt-4">
-                            <h3>My account</h3>
-                            <p>Member since 2022</p>
-                        </div>
+  <!-- -------------------------Header------------------------------------ -->
+  <header class="sticky-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container py-1">
+        <a class="navbar-brand" href="#">
+          <div class="w-50">
+            <img src="./assets/images/LandingPage/logo.png" alt="" class="logo_pic" />
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav_link_elements mt-2">
+            <li class="nav-item">
+              <a class="nav-link me-4" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="./aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="./MedicineDonation.html">Donate Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="./Contactus.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-lg-flex align-items-center">
+            <div class="search-icon me-4 mb-md-0 mb-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+              <i class="fas fa-search"></i>
+            </div>
+
+            <!---------------- Modal -------------->
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p class="Banner-below-txt">Search</p>
+                    <input type="text" class="form-control bordr_col_add" placeholder="Search" />
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-inner-modal" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn  btn-inner-modal">Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="Registration.html" class="btn text-nowrap btn_donate_A me-3 mb-sm-0 mb-3">
+              Sign Up
+            </a>
+
+            <a href="./Login.html" class="btn text-nowrap btn_donate_B me-3">
+              Sign In
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container py-5 ">
+      <div class="row for-border-btm mt-5">
+        <div class="col-md-12">
+          <div class="d-flex mb-5">
+            <img class="account-img" src="./assets/images/PaymentPages/Ellipse 3.png" alt="" />
+            <div class="ms-5 mt-4">
+              <h3>My account</h3>
+              <p>Member since 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="mt-4 mb-5">
+            <a class="text-capitalize text-decoration-none active-link for-actv-clr for-crsr"
+              onclick="showContent('account-setting', this)">
+              <span class="account-icon">
+                <i class="fa-solid fa-gear me-3" style="font-size: 25px;"></i>
+              </span>
+              <span class="text-dark"> Account Settings </span>
+            </a>
+          </div>
+          <div class="mb-5">
+            <a class="text-capitalize text-decoration-none for-crsr" onclick="showContent('donation-history', this)">
+              <span class="account-icon">
+                <img src="./assets/images/LandingPage/donation-history.png" alt="" width="25px" class="me-3">
+              </span>
+              <span class="text-dark"> Donation History </span>
+            </a>
+          </div>
+          <div class="mb-5">
+            <a class="text-capitalize text-decoration-none for-crsr" onclick="showContent('notification', this)">
+              <span class="account-icon">
+                <i class="fa-regular fa-bell me-3" style="font-size: 25px;"></i>
+              </span>
+              <span class="text-dark"> Notifications </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-12">
+          <div id="account-setting" class="hidden">
+            <ul class="nav nav-pills for-main-bg" id="pills-tab" role="tablist">
+              <li class="nav-item mt-4" role="presentation">
+                <button class="nav-link active custom-nav-link profile-bg e-sm-0 me-3" id="pills-home-tab"
+                  data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                  aria-selected="true">
+                  Profile Setting
+                </button>
+              </li>
+              <li class="nav-item ms-sm-4 mt-4" role="presentation">
+                <button class="nav-link custom-nav-link profile-bg" id="pills-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                  aria-selected="false">
+                  Notification Setting
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="mt-4 mb-4">
+                  <p class="account-name-edit mb-0">Name</p>
+                  <p class="ps-sm-2">Display Name</p>
+                </div>
+                <div>
+                  <p class="for-border-around ps-3 pt-1">Saima Khan</p>
+                  <p class="edit-txt text-capitalize">+ Add alternate name</p>
+                  <p class="account-name-edit">Login</p>
+                </div>
+                <div class="mb-5">
+                  <div class="mb-3">
+                    <label for="name" class="form-label Email__inp_fldtxt">
+                      Name</label>
+                    <input type="text" class="form-control Email__inp_fld w-75" id="name" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="name" class="form-label Email__inp_fldtxt">Password</label>
+                    <input type="password" class="form-control Email__inp_fld w-75" id="name" />
+                  </div>
+                </div>
+                <div class="Btn_S mb-3">
+                  <a href="" class="">
+                    <button class="btn Main_btn w-sm-25" type="button">
+                      Save
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="mb-4 mt-5">
+                  <p class="text-capitalize txt-notification mb-0">
+                    Notification Setting
+                  </p>
+                  <p>
+                    select the kind of notifications you get about your
+                    activities and recommendations
+                  </p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <p class="text-capitalize txt-notification mb-0">
+                      email notification
+                    </p>
+                    <p>select the kind of notifications you get about</p>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------Donation History---------------- -->
+          <div id="donation-history" class="hidden">
+            <div class="card mb-3 mt-4">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <h5 class="ps-2 mt-3">Total Tab :10</h5>
+                  <img src="./assets/images/PaymentPages/image 3.png" class="img-fluid ps-sm-2" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body pt-5  ms-sm-4">
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="history-card-txt">Medicine Name: </p>
+                      </div>
+                      <div class="col-6">
+                        <p class="">Panadol</p>
+                      </div>
                     </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="history-card-txt">Discription:</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="">There are many variations of passages </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="history-card-txt">Address:</p>
+                      </div>
+                      <div class="col-6">
+                        <p class=" ">There are many variations of passages </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="history-card-txt">Date:</p>
+                      </div>
+                      <div class="col-6">
+                        <p class=" ">15/04/2023</p>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class=" med-status-txt mt-2">
+                        Medicine Received
+                      </p>
+                      <div class="Btn_S">
+                        <a href="./SeeDetails.html" class="">
+                          <button class="btn Main_btn px-4 py-2 text-nowrap" type="button">
+                            See Detail
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="card mb-3 mt-4">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <h5 class="ps-2 mt-3">Total Tab :10</h5>
+                    <img src="./assets/images/PaymentPages/image 3.png" class="img-fluid ps-sm-2" alt="..." />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body pt-5  ms-sm-4">
+                      <div class="row">
+                        <div class="col-6">
+                          <p class="history-card-txt">Medicine Name: </p>
+                        </div>
+                        <div class="col-6">
+                          <p class="">Panadol</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <p class="history-card-txt">Discription:</p>
+                        </div>
+                        <div class="col-6">
+                          <p class="">There are many variations of passages </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <p class="history-card-txt">Address:</p>
+                        </div>
+                        <div class="col-6">
+                          <p class=" ">There are many variations of passages </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <p class="history-card-txt">Date:</p>
+                        </div>
+                        <div class="col-6">
+                          <p class=" ">15/04/2023</p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <p class=" med-status-txt mt-2">
+                          Medicine Received
+                        </p>
+                        <div class="Btn_S">
+                          <a href="./SeeDetails.html" class="">
+                            <button class="btn Main_btn px-4 py-2 text-nowrap" type="button">
+                              See Detail
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card crd-donation-history mb-4 mt-4">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <h5 class="ps-2 mt-3">Total Tab :10</h5>
+                    <img src="./assets/images/PaymentPages/image 3.png" class="img-fluid ps-sm-2" alt="..." />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body pt-5  ms-sm-4">
+                      <div class="row">
+                        <div class="col-6">
+                          <p class="history-card-txt">Medicine Name: </p>
+                        </div>
+                        <div class="col-6">
+                          <p class="">Panadol</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <p class="history-card-txt">Discription:</p>
+                        </div>
+                        <div class="col-6">
+                          <p class="">There are many variations of passages </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <p class="history-card-txt">Address:</p>
+                        </div>
+                        <div class="col-6">
+                          <p class=" ">There are many variations of passages </p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <p class="history-card-txt">Date:</p>
+                        </div>
+                        <div class="col-6">
+                          <p class=" ">15/04/2023</p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <p class=" med-status-txt mt-2">
+                          Medicine Received
+                        </p>
+                        <div class="Btn_S">
+                          <a href="./SeeDetails.html" class="">
+                            <button class="btn Main_btn px-4 py-2 text-nowrap" type="button">
+                              See Detail
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Btn_S d-flex justify-content-end me-3 mb-3">
+                <a href="./DonationHistory.html" class="">
+                  <button class="btn Main_btn px-5" type="button">
+                    See All
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div id="notification" class="hidden">
+              <div>
+                <span class="d-flex align-items-center mt-4 mb-4"><i class="fa-solid fa-arrow-left" id="backButton"></i>
+                  <h4 class="text-capitalize ms-3">Notification</h4>
+                </span>
+                <h5 class="mb-4">Today</h5>
+              </div>
+              <div>
+                <div class="mb-5">
+                  <div class="input-group multiple-placeholder  p-2">
+                    <input type="text" class="form-control for-new-brdr" id="name"
+                      placeholder="Your medicine was Shipped" />
+                    <div class="input-group-append">
+                      <span class="input-group-text time-holder">5 hours ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-5">
+                  <div class="input-group multiple-placeholder  p-2">
+                    <input type="text" class="form-control for-new-brdr" id="name"
+                      placeholder="Your medicine was Shipped" />
+                    <div class="input-group-append">
+                      <span class="input-group-text time-holder">8 hours ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="input-group multiple-placeholder  p-2">
+                    <input type="text" class="form-control for-new-brdr" id="name"
+                      placeholder="Your medicine was Shipped" />
+                    <div class="input-group-append">
+                      <span class="input-group-text time-holder">6 hours ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--==================Footer====================== -->
+  <footer class="bg-white">
+    <div class="container ">
+        <div class="row mt-sm-5 mt-3">
+            <div class="col-lg-5 col-md-12 col-sm-12">
+                <div class="">
+                    <div class="w-100 mb-3">
+          <img src="./assets/images/LandingPage/logo.png" alt="" class="logo_pic" />
+                    </div>
+                    <p class="footer_cont_txt_A text-capitalize">Lorem ipsum dolor sit amet consectetur. Adipiscing
+                        adipiscing hendrerit
+                        volutpat ut elit
+                        pellentesque quis et. Blandit
+                        vitae sit odio donec enim. Gravida eget pulvinar ut ultricies viverra in mauris. Molestie
+                        donec
+                        cursus eget egestas et
+                        luctus. Amet semper amet porttitor ultricies quis.Commodo dictumst
+                  enim morbi vitae.Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="mt-4 mb-5">
-                        <a class="text-capitalize text-decoration-none active-link for-actv-clr for-crsr"
-                            onclick="showContent('account-setting', this)">
-                            <span class="account-icon">
-                                <i class="fa-solid fa-gear me-3"></i>
-                            </span>
-                            <span class="text-dark"> Account Settings </span>
-                        </a>
-                    </div>
-                    <div class="mb-5">
-                        <a class=" text-capitalize text-decoration-none for-crsr"
-                            onclick="showContent('donation-history', this)">
-                            <span class="account-icon">
-                                <i class="fa-solid fa-box-archive me-3"></i>
-                            </span>
-                            <span class="text-dark"> Donation History </span>
-                        </a>
-                    </div>
-                    <div class="mb-5">
-                        <a class=" text-capitalize text-decoration-none for-crsr"
-                            onclick="showContent('notification', this)">
-                            <span class="account-icon">
-                                <i class="fa-regular fa-bell me-3"></i>
-                            </span>
-                            <span class="text-dark"> Notification </span>
-                        </a>
-                    </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 ">
+                <p class="mb-3 footer_contct_A text-capitalize">Contact Us</p>
+                <div class="d-flex mb-3">
+                        <i class="fa-solid fa-location-dot para_lite_A text-capitalize me-2"></i><span
+                        class="text-capitalize para_lite_B ">Rawalpindi, Pakistan</span>
                 </div>
-                <div class="col-md-8 col-sm-12">
-                    <div id="account-setting" class="hidden">
-                        <ul class="nav nav-pills for-main-bg " id="pills-tab" role="tablist">
-                            <li class="nav-item mt-4" role="presentation">
-                                <button class="nav-link active  custom-nav-link profile-bg" id="pills-home-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                    aria-selected="true">
-                                    Profile Setting
-                                </button>
-                            </li>
-                            <li class="nav-item ms-sm-4 ms-0 mt-4" role="presentation">
-                                <button class="nav-link custom-nav-link profile-bg" id="pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-profile" type="button" role="tab"
-                                    aria-controls="pills-profile" aria-selected="false">
-                                    Notification Setting
-                                </button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                aria-labelledby="pills-home-tab">
-                                <div class="mt-4 mb-4">
-                                    <p class="account-name-edit mb-0"> Name</p>
-                                    <p class="ps-2">Display Name</p>
-                                </div>
-                                <div>
-                                    <p class="for-border-around ps-3 pt-1 ">Saima Khan</p>
-                                    <p class="edit-txt text-capitalize">+ Add alternate name</p>
-                                    <p class=" account-name-edit">Login</p>
-                                </div>
-                                <div class="mb-5">
-                                    <div class="mb-3">
-                                        <label for="name" class="form-label  Email__inp_fldtxt"> Name</label>
-                                        <input type="text" class="form-control Email__inp_fld w-75" id="name">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="name" class="form-label  Email__inp_fldtxt">Password</label>
-                                        <input type="password" class="form-control Email__inp_fld w-75" id="name">
-                                    </div>
-                                </div>
-                                <div class="Btn_S mb-3">
-                                    <a href="" class="">
-                                        <button class="btn Main_btn w-25" type="button">Save</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                aria-labelledby="pills-profile-tab">
-                                <div class="mb-4 mt-5">
-                                    <p class="text-capitalize txt-notification mb-0">Notification Setting</p>
-                                    <p>select the kind of notifications you get about your activities and recommendations</p>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <p class="text-capitalize txt-notification mb-0">email notification</p>
-                                        <p>select the kind of notifications you get about</p>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
-                                            checked>
+                <div class="d-flex mb-3">
+                    <i class="fa-solid fa-phone para_lite_A text-capitalize me-2"></i><span
+                    class=" para_lite_B ">051-2468938</span>
+                </div>
+                <div class="d-flex mb-3">
+                    <i class="fa-solid fa-envelope para_lite_A text-capitalize me-2"></i></p> <span
+                    class=" para_lite_B ">Kashif678@gmail.com</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+                <div class="">
+                    <p class="mb-3 footer_contct_A text-capitalize">Links</p>
 
-                                    </div>
+                    <a href="#" class=" d-flex facebook-text-A  face_A mb-2 text-decoration-none pointer">
+                        <div class="icons-col ">
+                            <i class="fa-brands fa-facebook icon-fa facebook_color me-2"></i>
+                        </div>
+                        <span class=" facebook-A">Facebook</span>
+                    </a>
+                    <a href="#" class=" d-flex facebook-text-A twiitwe_A mb-2  text-decoration-none pointer">
+                        <div class="icons-col">
+                            <i class="fab fa-twitter  icon-fa twitter_color me-2"></i>
+                        </div>
+                        <span class="facebook-A">Twitter</span>
+                    </a>
+                    <a href="#" class="d-flex facebook-text-A insta_A  mb-4 text-decoration-none pointer">
+                        <div class="instagram-icon ">
+                            <i class="fab fa-instagram insta_A instagram_color me-2"></i>
+                        </div>
+                        <span class=" facebook-A insta_A">Instagram</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+               <div class="">
+                    <p class="mb-3 footer_contct_A text-capitalize">Help</p>
 
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- ----------------Donation History---------------- -->
-                    <div id="donation-history" class="hidden">
-                        <!-- donation history content here -->
-                        <div class="card mb-3 mt-4">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <h5 class="ps-2 mt-3">Total Tab :10</h5>
-                                    <img src="./assets/images/PaymentPages/image 3.png" class="img-fluid ps-sm-2"
-                                        alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body mt-4">
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Name: </p>
-                                                <span class="ms-5">Panadol</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Description:</p>
-                                                <span class="ms-4 ">There are many variations of passages of Lorem Ipsum
-                                                    available,</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Address:</p>
-                                                <span class="ms-4 ">There are many variations of passages of Lorem Ipsum
-                                                    available,</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Date:</p>
-                                                <span class="ms-5">15/04/2023</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Barcode:</p>
-                                                <span class="ms-4">00634u4rye9</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p class="ms-5 med-status-txt mt-2">Medicine Received</p>
-                                                <div class="Btn_S">
-                                                    <a href="./SeeDetails.html" class="">
-                                                        <button class="btn Main_btn px-4 py-2 text-nowrap" type="button">See
-                                                            Detail</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3 mt-4">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <h5 class="ps-2 mt-3">Total Tab :10</h5>
-                                    <img src="./assets/images/PaymentPages/image 3.png" class="img-fluid ps-sm-2"
-                                        alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body mt-4">
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Name: </p>
-                                                <span class="ms-5">Panadol</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Description:</p>
-                                                <span class="ms-4 ">There are many variations of passages of Lorem Ipsum
-                                                    available,</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Address:</p>
-                                                <span class="ms-4 ">There are many variations of passages of Lorem Ipsum
-                                                    available,</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Date:</p>
-                                                <span class="ms-5">15/04/2023</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Barcode:</p>
-                                                <span class="ms-4">00634u4rye9</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p class="ms-5 med-status-txt mt-2">Medicine Received</p>
-                                                <div class="Btn_S">
-                                                    <a href="./SeeDetails.html" class="">
-                                                        <button class="btn Main_btn px-4 py-2 text-nowrap" type="button">See
-                                                            Detail</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card  crd-donation-history mb-4 mt-4">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <h5 class="ps-2 mt-3">Total Tab :10</h5>
-                                    <img src="./assets/images/PaymentPages/image 3.png" class="img-fluid ps-sm-2"
-                                        alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body mt-4">
-                                        <div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Name: </p>
-                                                <span class="ms-5">Panadol</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Description:</p>
-                                                <span class="ms-4 ">There are many variations of passages of Lorem Ipsum
-                                                    available,</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Address:</p>
-                                                <span class="ms-4 ">There are many variations of passages of Lorem Ipsum
-                                                    available,</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Date:</p>
-                                                <span class="ms-5">15/04/2023</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <p class="history-card-txt">Barcode:</p>
-                                                <span class="ms-4">00634u4rye9</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p class="ms-5 med-status-txt mt-2">Medicine Received</p>
-                                                <div class="Btn_S">
-                                                    <a href="./SeeDetails.html" class="">
-                                                        <button class="btn Main_btn px-4 py-2 text-nowrap" type="button">See
-                                                            Detail</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Btn_S d-flex justify-content-end me-3 mb-3">
-                            <a href="./DonationHistory.html" class="">
-                                <button class="btn Main_btn px-5" type="button">See All</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="notification" class="hidden">
-                        <!-- Your donation history content here -->
-                        <div>
-                            <span class="d-flex align-items-center mt-4 mb-4"><i class="fa-solid fa-arrow-left" id="backButton"></i>
-                                <h4 class="text-capitalize ms-3">Notification</h4>
-                            </span>
-                            <h5 class="mb-4">Today</h5>
-                        </div>
-                        <div>
-                            <div class="mb-5">
-                                <div class="input-group multiple-placeholder w-75">
-                                    <input type="text" class="form-control for-new-brdr" id="name"
-                                        placeholder="Your medicine was Shipped">
-                                    <div class="input-group-append ">
-                                        <span class="input-group-text time-holder">5 hours ago</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-5">
-                                <div class="input-group multiple-placeholder w-75">
-                                    <input type="text" class="form-control for-new-brdr" id="name"
-                                        placeholder="Your medicine was Shipped">
-                                    <div class="input-group-append ">
-                                        <span class="input-group-text time-holder">8 hours ago</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="input-group multiple-placeholder w-75">
-                                    <input type="text" class="form-control for-new-brdr" id="name"
-                                        placeholder="Your medicine was Shipped">
-                                    <div class="input-group-append ">
-                                        <span class="input-group-text time-holder">6 hours ago</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="./FAQ.html" class=" d-flex  mb-2 text-dark text-decoration-none pointer">
+                        <span class="">FAQ</span>
+                    </a>
+                    <a href="./TermsandConditions.html" class=" d-flex text-dark  mb-2  text-decoration-none pointer">
+                        <span class="text-nowrap">Terms and Conditions</span>
+                    </a>
+                    <a href="./Privacypolicy.html" class="d-flex text-dark pt-sm-2 mb-2 text-decoration-none pointer">
+                        <span class="">Privacy Policy</span>
+                    </a>
+                </div> 
+            </div>
+        </div>
+        <hr/>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8 col-12">
+                <div class="footer__row__2 mt-sm-3">
+                    <ul>
+                        <li>
+                            <p>Copyright 2023</p>
+                        </li>
+                        <div class="">|</div>
+                        <li>
+                            <p>MedEasy</p>
+                        </li>
+                        <div class="">|</div>
+                        <li>
+                            <p>All Right Reserved</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
- <script src="./assets/js/script.js"></script>
-    <!-- ======================Js-Plugins=========================================-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/po  pper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+</footer>
+  <script src="./assets/js/script.js"></script>
+  <!-- ======================Js-Plugins=========================================-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/po  pper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

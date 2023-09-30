@@ -1,31 +1,49 @@
 /* ================Login_pg_button==================== */
-@media (min-width: 320px) and (max-width: 475px){
-    /* .Main_btn{
-       width: 100% !important;
-    } */
-    .Loginby_Ggl,.Loginby_fb{
-        width: 20%;
-    }
-    .Button_txt{
-        font-size: 13px;
-    }
-    
-.Email__inp_fld{
+@media (min-width: 320px) and (max-width: 475px) {
+  .Loginby_Ggl,
+  .Loginby_fb {
+    width: 20%;
+  }
+  .Button_txt {
+    font-size: 13px;
+  }
+  .footer__row__2 ul li p{
+    font-size: 11px;
+  }
+
+  .Email__inp_fld {
     width: 100% !important;
-}
-.DN-field{
-    width:100% !important;
-}
-.Distance_drp{
-width: 100%;
-}
-}
-@media (min-width: 320px) and (max-width: 768px){
-.Login_Form_S{
+  }
+  .DN-field {
     width: 100% !important;
-    margin-top: 20px !important;
+  }
+  .Distance_drp {
+    width: 100%;
+  }
 }
-.contact-img{
+@media (min-width: 320px) and (max-width: 768px) {
+  .Login_Form_S {
+    margin-top: 0px !important;
+  }
+  .contact-img {
     margin-top: 50%;
+  }
+  .create_pass_style {
+    width: 100% !important;
+  }
+  .footer_cont_txt_A, .content_para_sec1, .options-miles-A {
+    width: 100% !important;
+  }
+  .multiple-placeholder, .btn_donate_A, .btn_donate_B{
+    width:100% !important;
+  }
+  .for-new-brdr{
+    font-size: 12px;
+  }
 }
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .Login_Form_S {
+    width: 100% !important;
+  }
 }
