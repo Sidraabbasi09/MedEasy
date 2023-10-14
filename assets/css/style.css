@@ -399,9 +399,9 @@ a {
   text-transform: capitalize;
 }
 .facebook-text-A {
-  color: var(--text-color);
+  color:  rgba(8, 8, 8, 0.75);
   text-align: center;
-  font-family: Poppins;
+  font-family: var(--Poppins-FF);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -824,15 +824,16 @@ table.dataTable.no-footer {
 
 .btn-quant {
   color: var(--black-text) !important;
-  font-size: 35px !important;
+  font-size: 25px !important;
   box-shadow: none !important;
 }
 
 .input_quan-A {
   border: none !important;
-  font-size: 30px !important;
+  font-size: 25px !important;
   font-weight: 600 !important;
   color: var(--Persian-Green) !important;
+  height: 42px;
 }
 
 .input_quan-A:focus {
@@ -1266,7 +1267,7 @@ table.dataTable.no-footer {
 }
 /* =================Receiver Form======================== */
 .fa-camera {
-  font-size: 30px;
+  font-size: 21px;
 }
 .pic_upload {
   border-bottom: 2px solid var(--Persian-Green);
@@ -2187,4 +2188,7 @@ color:rgba(8, 8, 8, 0.45) ;}
 }
 .show_contact_icon{
   color:var(--white-text);
+}
+.bg-chatnum{
+  background-color: var(--Persian-Green);
 }
